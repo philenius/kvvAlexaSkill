@@ -90,6 +90,18 @@ var handlers = {
     'LaunchRequest': function () {
         this.response.speak('Hallo Philipp, willkommen beim KVV. Wie kann ich dir helfen?').listen(); 
         this.emit(':responseReady');
+    },
+    'AMAZON.StopIntent': function() {
+        this.emit(':tell', '<say-as interpret-as="interjection">Bis bald.</say-as>')   
+    },
+    'AMAZON.CancelIntent': function() {
+        this.emit(':tell', '<say-as interpret-as="interjection">Alles klar.</say-as><say-as interpret-as="interjection">Mach\'s gut</say-as>')
+    },
+    'AMAZON.HelpIntent': function() {
+        this.response.speak('Aktuell sind leider nur Stationen innerhalb von Karlsruhe verfügbar. Dass man die gewünschte Linie angeben kann, wird in naher Zukunft umgesetzt werden. ' +
+         'Folgende Frage kannst du mir beispielhaft stellen. Wann fährt die nächste Bahn von der Schillerstraße?' +
+         '<break time="1s"/> Ich hoffe, ich konnte dir hiermit weiterhelfen.');
+        this.emit(':responseReady');
     }
 };
 
