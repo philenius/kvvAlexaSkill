@@ -1,10 +1,11 @@
-module.exports =  {
-	"en-US": {
+module.exports = {
+	'en-US': {
 
 	},
-	"de-DE": {
-		"translation": {
-			"WELCOME": [ "Hallo Philipp, willkommen beim KVV. Wie kann ich dir helfen?" ]
+	'de-DE': {
+		'translation': {
+			'WELCOME': ['Willkommen beim KVV. Von welcher Station möchtest du losfahren?'],
+			'WELCOME_REPROMPT': ['Nenne mir die nächstgelegene Haltestelle.']
 		}
 	}
 }
