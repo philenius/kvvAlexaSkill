@@ -16,7 +16,16 @@
           "type": "stopSlotType"
         }
       ],
-      "intent": "departureIntent"
+      "intent": "StopIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "route",
+          "type": "routeSlotType"
+        }
+      ],
+      "intent": "RouteIntent"
     }
   ]
 }

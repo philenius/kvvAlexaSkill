@@ -2,9 +2,5 @@ AMAZON.HelpIntent was kann man sagen
 AMAZON.HelpIntent was kann ich sagen
 AMAZON.HelpIntent was kann ich fragen
 AMAZON.HelpIntent was kann ich dich fragen
-departureIntent wann fährt die nächste Bahn von {stop}
-departureIntent wann fährt die nächste Bahn am {stop}
-departureIntent wann fährt die nächste Bahn vom {stop}
-departureIntent wann fährt die nächste Bahn von der {stop}
-departureIntent wann fährt die nächste Bahn von dem {stop}
-departureIntent wann fährt die nächste Bahn an der {stop}
+StopIntent {stop}
+RouteIntent {route}
