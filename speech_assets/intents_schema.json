@@ -22,7 +22,11 @@
       "slots": [
         {
           "name": "route",
-          "type": "routeSlotType"
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "routePrefix",
+          "type": "routePrefixSlotType"
         }
       ],
       "intent": "RouteIntent"
