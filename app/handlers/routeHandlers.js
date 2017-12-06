@@ -7,8 +7,13 @@ module.exports = Alexa.CreateStateHandler(States.SELECTROUTE, {
         this.emit('NewSession');
     },
     'RouteIntent': function () {
-        var sessionRoute = this.event.request.intent.slots.route.value
-        this.attributes.route = sessionRoute;
+        var sessionRoute = this.event.request.intent.slots.route.value;
+        var sessionRoutePrefix = this.event.request.intent.slots.routePrefix.value;
+        if (sessionRoutePrefix !== undefined && sessionRoutePrefix === 'es') {
+            this.attributes.route = 'S' + sessionRoute;
+        } else {
+            this.attributes.route = sessionRoute;
+        }
         this.handler.state = States.NONE;
 
         var apiRoute = util.getRouteByName(sessionRoute);
