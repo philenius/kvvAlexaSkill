@@ -10,15 +10,16 @@
       "intent": "AMAZON.StopIntent"
     },
     {
+      "intent": "StopIntent",
       "slots": [
         {
           "name": "stop",
           "type": "stopSlotType"
         }
-      ],
-      "intent": "StopIntent"
+      ]
     },
     {
+      "intent": "RouteIntent",
       "slots": [
         {
           "name": "route",
@@ -28,8 +29,7 @@
           "name": "routePrefix",
           "type": "routePrefixSlotType"
         }
-      ],
-      "intent": "RouteIntent"
+      ]
     }
   ]
 }
