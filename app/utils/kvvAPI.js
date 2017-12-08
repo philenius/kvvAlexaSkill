@@ -9,6 +9,10 @@ var assembleUrl = function (customUrlPart) {
 };
 
 module.exports = {
+    /**
+    * @param {string} stopName
+    * @param {function(object, error):void} callback
+    */
     'searchStopsByName': function (stopName, callback) {
         https.get(assembleUrl('stops/byname/' + stopName), (res) => {
             var data = '';
@@ -29,8 +33,12 @@ module.exports = {
             callback(null, e);
         });
     },
-    'departuresByStop': function (stopID, callback) {
-        https.get(assembleUrl('departures/bystop/' + stopID), (res) => {
+    /**
+     * @param {Stop} stop
+     * @param {function(object, error):void} callback
+     */
+    'departuresByStop': function (stop, callback) {
+        https.get(assembleUrl('departures/bystop/' + stop.id), (res) => {
             var data = '';
             // HTTP status response != 200 -> KVV API returned error, e.g. invalid URL parameter
             if (res.statusCode != 200) {
