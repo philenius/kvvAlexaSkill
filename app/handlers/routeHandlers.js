@@ -14,16 +14,17 @@ module.exports = Alexa.CreateStateHandler(States.SELECTROUTE, {
         } else {
             this.attributes.route = sessionRoute;
         }
-        this.handler.state = States.NONE;
 
         var apiRoute = util.getRouteByName(this.attributes.route);
         if (apiRoute === undefined) {
-            this.emit(':ask', 'Entschuldige, diese Linie ist mir leider nicht bekannt.', 'Bitte nenne die gewünschte Linie erneut.');
+            this.emit(':ask', 'Entschuldige, diese Linie ist mir leider nicht bekannt. Mit welcher Linie möchtest du fahren?', 'Bitte nenne die gewünschte Linie erneut.');
             return;
         }
         this.attributes.apiRoute = apiRoute;
         var cardTitle = 'KVV - Route';
         var cardContent = apiRoute.name;
+
+        this.handler.state = States.NONE;
         this.emit(':tellWithCard', 'Alles klar, du möchtest mit der Linie ' + apiRoute.name + ' fahren.', cardTitle, cardContent);
     },
     'Unhandled': function () {
