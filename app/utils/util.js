@@ -47,4 +47,20 @@ module.exports = {
 
         return m.get(routeName.toLowerCase());
     },
+    'getNextDepartureFromStop': function (stop, callback) {
+        kvvAPI.departuresByStop(stop, function (data, error) {
+            var json = JSON.parse(data);
+            
+            var departures = json.departures;
+            if (departures === undefined) {
+                callback(null, new Error('invalid server response'));
+                return;
+            }
+            if (departures.length == 0) {
+                callback([], null);
+                return;
+            }
+            callback(departures, null);
+        });
+    },
 };
