@@ -23,6 +23,8 @@
   "homepage": "https://github.com/philenius/kvvAlexaSkill#readme",
   "dependencies": {
     "alexa-sdk": "^1.0.22",
-    "https": "^1.0.0"
+    "assertthat": "^0.11.0",
+    "https": "^1.0.0",
+    "mocha": "^4.0.1"
   }
 }
