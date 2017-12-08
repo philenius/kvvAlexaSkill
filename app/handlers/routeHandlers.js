@@ -18,7 +18,7 @@ module.exports = Alexa.CreateStateHandler(States.SELECTROUTE, {
 
         var apiRoute = util.getRouteByName(this.attributes.route);
         if (apiRoute === undefined) {
-            this.emit(':tell', 'Entschuldige, diese Linie ist mir leider nicht bekannt.');
+            this.emit(':ask', 'Entschuldige, diese Linie ist mir leider nicht bekannt.', 'Bitte nenne die gewünschte Linie erneut.');
             return;
         }
         this.attributes.apiRoute = apiRoute;
