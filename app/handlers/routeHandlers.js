@@ -27,6 +27,7 @@ module.exports = Alexa.CreateStateHandler(States.SELECTROUTE, {
         var apiStop = this.attributes.apiStop;
 
         util.getNextDeparturesFromStopForRoute(apiStop, apiRoute, function (data, error) {
+            var cardTitle = 'Linie ' + apiRoute.name + ' von ' + apiStop.name;
             var cardContent = '';
             if (data[0].length == 0) {
                 cardContent = 'Keine Bahnen.'
