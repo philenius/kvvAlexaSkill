@@ -3,12 +3,8 @@
 const https = require('https');
 const Stop = require('../models/stop');
 
-var apiKey = '?key=377d840e54b59adbe53608ba1aad70e8';
-var baseUrl = 'https://live.kvv.de/webapp/';
-
-var assembleUrl = function (customUrlPart) {
-    return baseUrl + customUrlPart + apiKey;
-};
+const apiKey = '?key=377d840e54b59adbe53608ba1aad70e8';
+const baseUrl = 'https://live.kvv.de/webapp/';
 
 module.exports = {
     /**
@@ -59,4 +55,8 @@ module.exports = {
             callback(null, e);
         });
     },
+};
+
+var assembleUrl = function (customUrlPart) {
+    return baseUrl + customUrlPart + apiKey;
 };
