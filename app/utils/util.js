@@ -9,6 +9,7 @@ const filter = require('./filter');
 module.exports = {
     'getStopByName': function (stopName) {
         var m = new Map();
+        m.set('duale hochschule', new Stop('Duale Hochschule', 'de:8212:12'));
         m.set('ebertstrasse', new Stop('Ebertstraße', 'de:8212:91'));
         m.set('europaplatz kaiserstraße', new Stop('Europaplatz Kaiserstraße', 'de:8212:31'));
         m.set('europaplatz karlstraße', new Stop('Europaplatz Karlsstraße', 'de:8212:60'));
@@ -17,7 +18,7 @@ module.exports = {
         m.set('kronenplatz erler-straße', new Stop('kKronenplatz Erler-Straße', 'de:8212:80'));
         m.set('mühlburger tor grashofstraße', new Stop('Mühlburger Tor Grashofstraße', 'de:8212:321'));
         m.set('mühlburger tor kaiserallee', new Stop('Mühlburger Tor Kaiserallee', 'de:8212:49'));
-        m.set('neureut-heide', new Stop('Neureut-Heide', 'de:8212:13'));
+        m.set('neureut heide', new Stop('Neureut-Heide', 'de:8212:13'));
         m.set('poststrasse', new Stop('Poststraße', 'de:8212:98'));
         m.set('rüppurer tor', new Stop('Rüppurer Tor', 'de:8212:85'));
         m.set('schillerstraße', new Stop('Schillerstraße', 'de:8212:40'));
