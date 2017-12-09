@@ -55,9 +55,9 @@ module.exports = {
             var destination = departuresDirection1[0].destination;
 
             if (departuresDirection1.length == 1) {
-                cardContent += destination + ':\n' + buildDepartureTimeCardContent(departuresDirection1[0].time);
+                cardContent += 'Richtung ' + destination + ':\n' + buildDepartureTimeCardContent(departuresDirection1[0].time);
             } else if (departuresDirection1.length == 2) {
-                cardContent += destination + ':\n' + buildDepartureTimeCardContent(departuresDirection1[0].time) + ', ' +
+                cardContent += 'Richtung ' + destination + ':\n' + buildDepartureTimeCardContent(departuresDirection1[0].time) + ', ' +
                     buildDepartureTimeCardContent(departuresDirection1[1].time);
             }
         }
@@ -65,9 +65,9 @@ module.exports = {
             var destination = departuresDirection2[0].destination;
 
             if (departuresDirection2.length == 1) {
-                cardContent += '\n' + destination + ':\n' + buildDepartureTimeCardContent(departuresDirection2[0].time);
+                cardContent += '\nRichtung ' + destination + ':\n' + buildDepartureTimeCardContent(departuresDirection2[0].time);
             } else if (departuresDirection2.length == 2) {
-                cardContent += '\n' + destination + ':\n' + buildDepartureTimeCardContent(departuresDirection2[0].time) + ', ' +
+                cardContent += '\nRichtung ' + destination + ':\n' + buildDepartureTimeCardContent(departuresDirection2[0].time) + ', ' +
                     buildDepartureTimeCardContent(departuresDirection2[1].time);
             }
         }
