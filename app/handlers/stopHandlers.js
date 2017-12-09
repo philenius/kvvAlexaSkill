@@ -34,9 +34,7 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTOP, {
                 });
             } else {
                 that.attributes.apiStop = apiStop;
-                var cardTitle = 'KVV - Station';
-                var cardContent = apiStop.name;
-                that.emit(':askWithCard', 'Alles klar, du möchtest von der Station <break strength="medium"/>' + apiStop.name + ' losfahren. Mit welcher Linie möchtest du fahren?', 'Nenne mir die Linie, mit der du fahren möchtest.', cardTitle, cardContent);
+                that.emit(':ask', 'Alles klar, du möchtest von der Station <break strength="medium"/>' + apiStop.name + ' losfahren. Mit welcher Linie möchtest du fahren?', 'Nenne mir die Linie, mit der du fahren möchtest.');
             }
         });
     },
