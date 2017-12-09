@@ -17,6 +17,7 @@ module.exports = {
         m.set('kronenplatz erler-straße', new Stop('kKronenplatz Erler-Straße', 'de:8212:80'));
         m.set('mühlburger tor grashofstraße', new Stop('Mühlburger Tor Grashofstraße', 'de:8212:321'));
         m.set('mühlburger tor kaiserallee', new Stop('Mühlburger Tor Kaiserallee', 'de:8212:49'));
+        m.set('neureut-heide', new Stop('Neureut-Heide', 'de:8212:13'));
         m.set('poststrasse', new Stop('Poststraße', 'de:8212:98'));
         m.set('rüppurer tor', new Stop('Rüppurer Tor', 'de:8212:85'));
         m.set('schillerstraße', new Stop('Schillerstraße', 'de:8212:40'));
