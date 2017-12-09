@@ -9,6 +9,7 @@ module.exports = {
         m.set('ebertstrasse', new Stop('Ebertstraße', 'de:8212:91'));
         m.set('europaplatz kaiserstraße', new Stop('Europaplatz Kaiserstraße', 'de:8212:31'));
         m.set('europaplatz karlstraße', new Stop('Europaplatz Karlsstraße', 'de:8212:60'));
+        m.set('hauptbahnhof vorplatz', new Stop('Hauptbahnhof Vorplatz', 'de:8212:89'));
         m.set('karlstor', new Stop('Karlstor', 'de:8212:61'));
         m.set('kronenplatz erler-straße', new Stop('kKronenplatz Erler-Straße', 'de:8212:80'));
         m.set('mühlburger tor grashofstraße', new Stop('Mühlburger Tor Grashofstraße', 'de:8212:321'));
