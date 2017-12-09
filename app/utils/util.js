@@ -4,6 +4,7 @@ const kvvAPI = require('./kvvAPI');
 const Stop = require('../models/stop');
 const Route = require('../models/route');
 const time = require('./time');
+const filter = require('./filter');
 
 module.exports = {
     'getStopByName': function (stopName) {
@@ -72,16 +73,21 @@ module.exports = {
         });
     },
     /**
+     * Get next departures from a given stop for a given route (both directions).
+     * 
      * @param {Stop} stop
      * @param {Route} route
      * @param {function(array,error):void} callback
      */
     'getNextDeparturesFromStopForRoute': function (stop, route, callback) {
         kvvAPI.departuresByStop(stop, function (data, error) {
+            if (error != null) {
+                callback(null, error);
+                return;
+            }
             var json = JSON.parse(data);
-
             var departures = json.departures;
-            if (departures === undefined) {
+            if (departures == undefined) {
                 callback(null, new Error('invalid server response'));
                 return;
             }
@@ -89,39 +95,7 @@ module.exports = {
                 callback([], null);
                 return;
             }
-            var filteredDepartures = filterDeparturesByRoute(route, departures);
-            var departuresDir1 = getFirstTwoDepartures(filterDeparturesByDirection('1', filteredDepartures));
-            var departuresDir2 = getFirstTwoDepartures(filterDeparturesByDirection('2', filteredDepartures));
-            callback([departuresDir1, departuresDir2], null);
+            callback(filter.getDeparturesByRoute(route, departures), null);
         });
     },
-};
-
-var filterDeparturesByRoute = function (route, departures) {
-    return departures.filter(function (departure) {
-        return departure.route == route.name;
-    });
-};
-
-var filterDeparturesByDirection = function (direction, departures) {
-    return departures.filter(function (departure) {
-        return departure.direction == direction;
-    });
-}
-
-var getFirstTwoDepartures = function (departures) {
-    var counter = 0;
-    var firstTwoTrains = [];
-    departures.forEach(departure => {
-        if (counter >= 2) {
-            return;
-        }
-        // don't display departures which depart in less than 2 minutes
-        if (!time.isAbsoluteTimestamp(departure.time) && time.getKVVTimestampWithoutUnit(departure.time) < 2) {
-            return;
-        }
-        firstTwoTrains.push(departure);
-        counter++;
-    });
-    return firstTwoTrains;
 };
