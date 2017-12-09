@@ -3,22 +3,12 @@
 const filter = require('../utils/filter');
 const assert = require('assertthat');
 
-test('isOnlyOneRouteDeparting returns that the array of departures contains only one route', () => {
-    var data = [
-        {
-            'route': '3',
-        },
-        {
-            'route': '3',
-        },
-        {
-            'route': '3',
-        },
-    ];
-    assert.that(filter.isOnlyOneRouteDeparting(data)).is.equalTo(true);
+test('getCountOfDifferentRoutesDeparting returns 0 because there are no departures', () => {
+    var data = [];
+    assert.that(filter.getCountOfDifferentRoutesDeparting(data)).is.equalTo(0);
 });
 
-test('isOnlyOneRouteDeparting returns that the array of departures contains more than one route', () => {
+test('getCountOfDifferentRoutesDeparting returns the correct count of different routers departing', () => {
     var data = [
         {
             'route': '3',
@@ -27,8 +17,17 @@ test('isOnlyOneRouteDeparting returns that the array of departures contains more
             'route': 'S5',
         },
         {
-            'route': '3',
+            'route': 'S51',
         },
     ];
-    assert.that(filter.isOnlyOneRouteDeparting(data)).is.equalTo(false);
+    assert.that(filter.getCountOfDifferentRoutesDeparting(data)).is.equalTo(3);
+    data = [
+        {
+            'route': 'S11',
+        },
+        {
+            'route': 'S11',
+        },
+    ];
+    assert.that(filter.getCountOfDifferentRoutesDeparting(data)).is.equalTo(1);
 });

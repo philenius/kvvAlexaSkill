@@ -3,15 +3,15 @@
 const time = require('./time');
 
 module.exports = {
-    'isOnlyOneRouteDeparting': function(departures) {
-        var firstRoute = departures[0].route;
-        var onlyOneRoute = true;
+    'getCountOfDifferentRoutesDeparting': function(departures) {
+        if (departures.length == 0) {
+            return 0;
+        }
+        var routes = new Map();
         departures.forEach(departure => {
-            if (departure.route != firstRoute) {
-                onlyOneRoute = false;
-            }
+            routes.set(departure.route, true);
         });
-        return onlyOneRoute;
+        return routes.size;
     },
     'getDeparturesByRoute': function (route, departures) {
         return departures.filter(function (departure) {
