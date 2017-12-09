@@ -1,6 +1,6 @@
 const kvvAPI = require('./kvvAPI');
-const Stop = require('./stop');
-const Route = require('./route');
+const Stop = require('../models/stop');
+const Route = require('../models/route');
 const time = require('./time');
 
 module.exports = {
