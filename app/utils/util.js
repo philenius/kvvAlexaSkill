@@ -1,6 +1,7 @@
 const kvvAPI = require('./kvvAPI');
 const Stop = require('./stop');
 const Route = require('./route');
+const time = require('./time');
 
 module.exports = {
     'getStopByName': function (stopName) {
@@ -47,10 +48,14 @@ module.exports = {
 
         return m.get(routeName.toLowerCase());
     },
-    'getNextDepartureFromStop': function (stop, callback) {
+    /**
+     * @param {Stop} stop
+     * @param {function(array,error):void} callback
+     */
+    'getAllDeparturesFromStop': function (stop, callback) {
         kvvAPI.departuresByStop(stop, function (data, error) {
             var json = JSON.parse(data);
-            
+
             var departures = json.departures;
             if (departures === undefined) {
                 callback(null, new Error('invalid server response'));
@@ -63,4 +68,57 @@ module.exports = {
             callback(departures, null);
         });
     },
+    /**
+     * @param {Stop} stop
+     * @param {Route} route
+     * @param {function(array,error):void} callback
+     */
+    'getNextDeparturesFromStopForRoute': function (stop, route, callback) {
+        kvvAPI.departuresByStop(stop, function (data, error) {
+            var json = JSON.parse(data);
+
+            var departures = json.departures;
+            if (departures === undefined) {
+                callback(null, new Error('invalid server response'));
+                return;
+            }
+            if (departures.length == 0) {
+                callback([], null);
+                return;
+            }
+            var filteredDepartures = filterDeparturesByRoute(route, departures);
+            var departuresDir1 = getFirstTwoDepartures(filterDeparturesByDirection('1', filteredDepartures));
+            var departuresDir2 = getFirstTwoDepartures(filterDeparturesByDirection('2', filteredDepartures));
+            callback([departuresDir1, departuresDir2], null);
+        });
+    },
+};
+
+var filterDeparturesByRoute = function (route, departures) {
+    return departures.filter(function (departure) {
+        return departure.route == route.name;
+    });
+};
+
+var filterDeparturesByDirection = function (direction, departures) {
+    return departures.filter(function (departure) {
+        return departure.direction == direction;
+    });
+}
+
+var getFirstTwoDepartures = function (departures) {
+    var counter = 0;
+    var firstTwoTrains = [];
+    departures.forEach(departure => {
+        if (counter >= 2) {
+            return;
+        }
+        // don't display departures which depart in less than 2 minutes
+        if (!time.isAbsoluteTimestamp(departure.time) && time.getKVVTimestampWithoutUnit(departure.time) < 2) {
+            return;
+        }
+        firstTwoTrains.push(departure);
+        counter++;
+    });
+    return firstTwoTrains;
 };
