@@ -1,8 +1,6 @@
-function Stop(name, id, lat, lon) {
+function Stop(name, id) {
     this.name = name;
     this.id = id;
-    this.lat = lat;
-    this.lon = lon;
 }
 
 module.exports = Stop;
