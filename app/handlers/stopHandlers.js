@@ -20,8 +20,8 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTOP, {
         }
         this.attributes.apiStop = apiStop;
         var cardTitle = 'KVV - Station';
-        var cardContent = apiStop.name + ' (' + apiStop.id + ')';
-        this.emit(':askWithCard', 'Alles klar, du möchtest von der Station ' + apiStop.name + ' losfahren. Mit welcher Linie möchtest du fahren?', 'Nenne mir die Linie, mit der du fahren möchtest.', cardTitle, cardContent);
+        var cardContent = apiStop.name;
+        this.emit(':askWithCard', 'Alles klar, du möchtest von der Station <break strength="medium"/>' + apiStop.name + ' losfahren. Mit welcher Linie möchtest du fahren?', 'Nenne mir die Linie, mit der du fahren möchtest.', cardTitle, cardContent);
     },
     'Unhandled': function () {
     },
