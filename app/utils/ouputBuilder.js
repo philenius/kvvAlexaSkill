@@ -36,10 +36,43 @@ module.exports = {
             }
         }
         return speechOutput;
-    }
+    },
+    /**
+     * @param {Stop} stop
+     * @param {Route} route
+     */
+    'buildCardForBothDirections': function (stop, route, departures) {
+        var cardTitle = 'Linie ' + route.name + ' von ' + stop.name;
+        var cardContent = '';
+        if (departures == null || departures.length == 0) {
+            cardContent = 'Keine Bahnen.'
+            return [cardTitle, cardContent];
+        }
+        var departuresDirection1 = filter.getDeparturesByDirection('1', departures);
+        var departuresDirection2 = filter.getDeparturesByDirection('2', departures);
+
+        if (departuresDirection1.length != 0) {
+            var destination = departuresDirection1[0].destination;
+
+            if (departuresDirection1.length == 1) {
+                cardContent += destination + ':\n\t' + departuresDirection1[0].time;
+            } else if (departuresDirection1.length == 2) {
+                cardContent += destination + ':\n\t' + departuresDirection1[0].time + ', ' + departuresDirection1[1].time;
+            }
+        }
+        if (departuresDirection2.length != 0) {
+            var destination = departuresDirection2[0].destination;
+
+            if (departuresDirection2.length == 1) {
+                cardContent += '\n' + destination + ':\n\t' + departuresDirection2[0].time;
+            } else if (departuresDirection2.length == 2) {
+                cardContent += '\n' + destination + ':\n\t' + departuresDirection2[0].time + ', ' + departuresDirection2[1].time;
+            }
+        }
+        return [cardTitle, cardContent];
+    },
 }
 
-// 1 departure
 /**
  * For 1 departure
  * 

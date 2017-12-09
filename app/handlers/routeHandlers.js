@@ -3,7 +3,8 @@
 const Alexa = require('alexa-sdk');
 const States = require('./states');
 const util = require('../utils/util');
-const speechBuilder = require('../utils/speechOuputBuilder');
+const outputBuilder = require('../utils/ouputBuilder');
+const filter = require('../utils/filter');
 
 module.exports = Alexa.CreateStateHandler(States.SELECTROUTE, {
     'NewSession': function () {
@@ -29,23 +30,9 @@ module.exports = Alexa.CreateStateHandler(States.SELECTROUTE, {
         var apiStop = this.attributes.apiStop;
 
         util.getNextDeparturesFromStopForRoute(apiStop, apiRoute, function (data, error) {
-            var cardTitle = 'Linie ' + apiRoute.name + ' von ' + apiStop.name;
-            var cardContent = '';
-            if (data[0].length == 0) {
-                cardContent = 'Keine Bahnen.'
-            } else if (data[0].length == 1) {
-                cardContent = data[0][0].destination + ': ' + data[0][0].time + '\n';
-            } else if (data[0].length == 2) {
-                cardContent = data[0][0].destination + ': ' + data[0][0].time + ', ' + data[0][1].time + '\n';
-            }
-            if (data[1].length == 0) {
-                cardContent += 'Keine Bahnen.'
-            } else if (data[1].length == 1) {
-                cardContent += data[1][0].destination + ': ' + data[1][0].time + '\n';
-            } else if (data[1].length == 2) {
-                cardContent += data[1][0].destination + ': ' + data[1][0].time + ', ' + data[1][1].time + '\n';
-            }
-            that.emit(':tellWithCard', speechBuilder.buildSpeechOutputForAnyDirection(data[0]) + speechBuilder.buildSpeechOutputForAnyDirection(data[1]), cardTitle, cardContent);
+            var relevantDepartures = filter.getRelevantDepartures(data);
+            var card = outputBuilder.buildCardForBothDirections(apiStop, apiRoute, relevantDepartures);
+            that.emit(':tellWithCard', outputBuilder.buildSpeechOutputForBothDirections(apiStop, apiRoute, relevantDepartures), card[0], card[1]);
         });
     },
     'Unhandled': function () {
