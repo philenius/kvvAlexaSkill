@@ -18,7 +18,6 @@ module.exports = {
 
         var speechOutput = '';
         if (departuresDirection1.length != 0) {
-            var route = departuresDirection1[0].route;
             var destination = departuresDirection1[0].destination;
 
             if (departuresDirection1.length == 1) {
@@ -28,7 +27,6 @@ module.exports = {
             }
         }
         if (departuresDirection2.length != 0) {
-            var route = departuresDirection2[0].route;
             var destination = departuresDirection2[0].destination;
 
             if (departuresDirection2.length == 1) {
@@ -42,18 +40,31 @@ module.exports = {
 }
 
 // 1 departure
+/**
+ * For 1 departure
+ * 
+ * @param {Route} route 
+ * @param {*} destination 
+ * @param {*} departures 
+ */
 var buildSpeechOutputForOneDepartureInOneDirection = function (route, destination, departures) {
     var departureTime = buildDepartureTimeSpeechOutput(departures[0].time);
 
-    return 'Die nächste {0} in Richtung {1} <break strength="medium"/> fährt {2}.'.format(route, destination, departureTime);
+    return 'Die nächste {0} in Richtung {1} <break strength="medium"/> fährt {2}.'.format(route.name, destination, departureTime);
 }
 
-// 2 departures with the same direction
+/**
+ * For 2 departures going to the same direction
+ * 
+ * @param {Route} route 
+ * @param {*} destination 
+ * @param {*} departures 
+ */
 var buildSpeechOutputForTwoDeparturesInOneDirection = function (route, destination, departures) {
     var departureTime1 = buildDepartureTimeSpeechOutput(departures[0].time);
     var departureTime2 = buildDepartureTimeSpeechOutput(departures[1].time);
 
-    return 'Die nächste {0} in Richtung {1} <break strength="medium"/> fährt {2} und wieder {3}.'.format(route, destination,
+    return 'Die nächste {0} in Richtung {1} <break strength="medium"/> fährt {2} und wieder {3}.'.format(route.name, destination,
         departureTime1, departureTime2);
 }
 
