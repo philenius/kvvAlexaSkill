@@ -8,7 +8,7 @@ module.exports = {
         // TODO: display time unit for absolute timestamps
 
         if (departures == null || departures.length == 0) {
-            return speechOutput = 'Leider fahren im Moment keinen Bahnen. ';
+            return speechOutput = 'Leider fahren im Moment keine Bahnen. ';
         }
 
         var speechOutput = 'Die nächste ' + departures[0].route + ' in Richtung ' + departures[0].destination + ' fährt';
