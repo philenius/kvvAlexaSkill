@@ -1,5 +1,7 @@
 'use strict';
 
+require('./app/utils/common');
+
 const Alexa = require('alexa-sdk');
 const newSessionHandlers = require('./app/handlers/newSessionHandlers');
 const stopHandlers = require('./app/handlers/stopHandlers');
