@@ -4,9 +4,13 @@ const time = require('./time');
 const filter = require('./filter');
 
 module.exports = {
-    'buildSpeechOutputForBothDirections': function (departures) {
+    /**
+     * @param {Stop} stop
+     * @param {Route} route
+     */
+    'buildSpeechOutputForBothDirections': function (stop, route, departures) {
         if (departures == null || departures.length == 0) {
-            return speechOutput = 'Leider fahren im Moment keine Bahnen von dieser Station.';
+            return speechOutput = 'Leider fahren im Moment keine Bahnen der Linie {0} <break strength="medium"/> von der Station {1}.'.format(route.name, stop.name);
         }
 
         var departuresDirection1 = filter.getDeparturesByDirection('1', departures);
@@ -33,11 +37,6 @@ module.exports = {
                 speechOutput += ' ' + buildSpeechOutputForTwoDeparturesInOneDirection(route, destination, departuresDirection2);
             }
         }
-
-        if (areDeparturesOnlyInOneDirection(departures)) {
-            speechOutput += ' In die andere Richtung fahren zur Zeit keine Bahnen.';
-        }
-
         return speechOutput;
     }
 }
@@ -68,14 +67,4 @@ var buildDepartureTimeSpeechOutput = function (departureTime) {
         departureTimeSpeechOutput = 'in {0} Minuten'.format(departureTime);
     }
     return departureTimeSpeechOutput;
-}
-
-var areDeparturesOnlyInOneDirection = function (departures) {
-    var departsDirection1 = filter.getDeparturesByDirection('1', departures);
-    var departsDirection2 = filter.getDeparturesByDirection('2', departures);
-
-    if ((departsDirection1.length == 0 && departsDirection2.length != 0) | (departsDirection1.length != 0 && departsDirection2.length == 0)) {
-        return true;
-    }
-    return false;
 }
