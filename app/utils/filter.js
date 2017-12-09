@@ -13,20 +13,30 @@ module.exports = {
             return departure.direction == direction;
         });
     },
+    /**
+     * Filters for relevant departures. Departures which are in less than 2 minutes are ignored.
+     * Returns at maximum 2 departures for each direction.
+     */
     'getRelevantDepartures': function (departures) {
-        var counter = 0;
-        var firstTwoTrains = [];
+        const satisfactionCount = 2;
+
+        var relevantDepartures = [];
+        var direction1Counter = 0;
+        var direction2Counter = 0;
+
         departures.forEach(departure => {
-            if (counter >= 2) {
-                return;
-            }
             // don't display departures which depart in less than 2 minutes
             if (!time.isAbsoluteTimestamp(departure.time) && time.getKVVTimestampWithoutUnit(departure.time) < 2) {
                 return;
             }
-            firstTwoTrains.push(departure);
-            counter++;
+            if (departure.direction == '1' && direction1Counter < satisfactionCount) {
+                relevantDepartures.push(departure);
+                direction1Counter++;
+            } else if (departure.direction == '2' && direction2Counter < satisfactionCount) {
+                relevantDepartures.push(departure);
+                direction2Counter++;
+            }
         });
-        return firstTwoTrains;
+        return relevantDepartures;
     },
 };
