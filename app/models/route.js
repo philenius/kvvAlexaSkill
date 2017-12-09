@@ -1,3 +1,5 @@
+'use strict';
+
 function Route(name) {
     this.name = name;
 }

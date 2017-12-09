@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
     NONE: '',
     SELECTSTOP: '_SELECTSTOP',

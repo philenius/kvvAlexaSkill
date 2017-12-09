@@ -1,3 +1,5 @@
+'use strict';
+
 const States = require('./states');
 
 module.exports = {

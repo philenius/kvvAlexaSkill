@@ -1,3 +1,5 @@
+'use strict';
+
 const Alexa = require('alexa-sdk');
 const States = require('./states');
 const util = require('../utils/util');

@@ -1,3 +1,5 @@
+'use strict';
+
 const kvvAPI = require('./kvvAPI');
 const Stop = require('../models/stop');
 const Route = require('../models/route');
