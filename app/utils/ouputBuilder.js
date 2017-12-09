@@ -55,18 +55,20 @@ module.exports = {
             var destination = departuresDirection1[0].destination;
 
             if (departuresDirection1.length == 1) {
-                cardContent += destination + ':\n\t' + departuresDirection1[0].time;
+                cardContent += destination + ':\n' + buildDepartureTimeCardContent(departuresDirection1[0].time);
             } else if (departuresDirection1.length == 2) {
-                cardContent += destination + ':\n\t' + departuresDirection1[0].time + ', ' + departuresDirection1[1].time;
+                cardContent += destination + ':\n' + buildDepartureTimeCardContent(departuresDirection1[0].time) + ', ' +
+                    buildDepartureTimeCardContent(departuresDirection1[1].time);
             }
         }
         if (departuresDirection2.length != 0) {
             var destination = departuresDirection2[0].destination;
 
             if (departuresDirection2.length == 1) {
-                cardContent += '\n' + destination + ':\n\t' + departuresDirection2[0].time;
+                cardContent += '\n' + destination + ':\n' + buildDepartureTimeCardContent(departuresDirection2[0].time);
             } else if (departuresDirection2.length == 2) {
-                cardContent += '\n' + destination + ':\n\t' + departuresDirection2[0].time + ', ' + departuresDirection2[1].time;
+                cardContent += '\n' + destination + ':\n' + buildDepartureTimeCardContent(departuresDirection2[0].time) + ', ' +
+                    buildDepartureTimeCardContent(departuresDirection2[1].time);
             }
         }
         return [cardTitle, cardContent];
@@ -111,4 +113,15 @@ var buildDepartureTimeSpeechOutput = function (departureTime) {
         departureTimeSpeechOutput = 'in {0} Minuten'.format(departureTime);
     }
     return departureTimeSpeechOutput;
+}
+
+var buildDepartureTimeCardContent = function (departureTime) {
+    var departureTimeCardContent = '';
+    if (time.isAbsoluteTimestamp(departureTime)) {
+        departureTimeCardContent = '{0} Uhr'.format(departureTime);
+    } else {
+        departureTime = time.getKVVTimestampWithoutUnit(departureTime);
+        departureTimeCardContent = '{0} Minuten'.format(departureTime);
+    }
+    return departureTimeCardContent;
 }
