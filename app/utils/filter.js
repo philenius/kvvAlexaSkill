@@ -3,6 +3,16 @@
 const time = require('./time');
 
 module.exports = {
+    'isOnlyOneRouteDeparting': function(departures) {
+        var firstRoute = departures[0].route;
+        var onlyOneRoute = true;
+        departures.forEach(departure => {
+            if (departure.route != firstRoute) {
+                onlyOneRoute = false;
+            }
+        });
+        return onlyOneRoute;
+    },
     'getDeparturesByRoute': function (route, departures) {
         return departures.filter(function (departure) {
             return departure.route == route.name;
