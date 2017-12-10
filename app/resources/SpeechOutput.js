@@ -20,7 +20,9 @@ module.exports = {
 				'<say-as interpret-as="interjection">tschö.</say-as>',
 			],
 			'CANCEL_ANSWER': ['<say-as interpret-as="interjection">Bis bald.</say-as>'],
-			'HELP_ANSWER': ['<say-as interpret-as="interjection">Moin</say-as>. Du kannst mich nach den Abfahrtszeiten der Bahnen des KVV fragen. Sage hierfür: Abfahrtszeiten. Oder: Wann fährt die nächste Bahn? Wenn du den Stationsnamen nicht bei jeder Anfrage angeben möchtest, dann kannst du deine Standard Station festlegen. Sage hierfür: Standard Station festlegen.'],
+			'HELP_ANSWER': ['<say-as interpret-as="interjection">Moin</say-as>. Du kannst mich nach den Abfahrtszeiten der Bahnen des KVV fragen. ' +
+				'Sage hierfür: Abfahrtszeiten. Oder: Wann fährt die nächste Bahn? Wenn du den Stationsnamen nicht bei jeder Anfrage angeben möchtest, ' +
+				'dann kannst du deine Standard Station festlegen. Sage hierfür: Standard Station festlegen.'],
 			'UNHANDLED': ['Leider ist bei der Verarbeitung deiner Anfrage ein Fehler aufgetreten.'],
 			'DEPARTURE': ['Von welcher Station möchtest du losfahren?'],
 			'STOP_INTENT_HELP_ANSWER': [
