@@ -28,6 +28,9 @@ DepartureIntent ich möchte abfahrtszeiten wissen
 DepartureIntent ich möchte die abfahrtszeiten wissen
 
 StandardStopIntent standard station festlegen
+StandardStopIntent standard station setzen
+StandardStopIntent setze standard station
 StandardStopIntent setze meine standard station
-StandardStopIntent lege meine standard fest
+StandardStopIntent lege meine standard station fest
+StandardStopIntent ich möchte meine standard station setzen
 StandardStopIntent ich möchte meine standard station festlegen
