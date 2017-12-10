@@ -39,5 +39,15 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTOP, {
         });
     },
     'Unhandled': function () {
+        this.emit(':tell', this.t('UNHANDLED'));
     },
+    'AMAZON.StopIntent': function () {
+        this.emit(':tell', this.t('STOP_ANSWER'));
+    },
+    'AMAZON.CancelIntent': function () {
+        this.emit(':tell', this.t('CANCEL_ANSWER'));
+    },
+    'AMAZON.HelpIntent': function () {
+        this.emit(':tell', this.t('STOP_INTENT_HELP_ANSWER'));
+    }
 });
