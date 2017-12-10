@@ -20,6 +20,10 @@ module.exports = {
         this.handler.state = States.SELECTSTOP;
         this.emit(':ask', this.t('DEPARTURE'));
     },
+    'StandardStopIntent': function () {
+        this.handler.state = States.SELECTSTANDARDSTOP;
+        this.emit(':ask', this.t('STANDARD_STOP'));
+    },
     'Unhandled': function () {
     },
     'AMAZON.StopIntent': function () {
