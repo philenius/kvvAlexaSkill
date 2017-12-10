@@ -19,6 +19,7 @@ RouteIntent mit der {routePrefix} {route}
 RouteIntent mit dem {routePrefix} {route}
 
 DepartureIntent abfahrtszeiten
+DepartureIntent mit abfahrtszeiten
 DepartureIntent wann fährt die nächste bahn
 DepartureIntent wann fährt die bahn
 DepartureIntent ich möchte wissen wann fährt die nächste bahn
