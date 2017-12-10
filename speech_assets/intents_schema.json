@@ -1,13 +1,19 @@
 {
   "intents": [
     {
+      "intent": "AMAZON.YesIntent"
+    },
+    {
+      "intent": "AMAZON.NoIntent"
+    },
+    {
       "intent": "AMAZON.CancelIntent"
     },
     {
-      "intent": "AMAZON.HelpIntent"
+      "intent": "AMAZON.StopIntent"
     },
     {
-      "intent": "AMAZON.StopIntent"
+      "intent": "AMAZON.HelpIntent"
     },
     {
       "intent": "DepartureIntent"
@@ -33,6 +39,9 @@
           "type": "routePrefixSlotType"
         }
       ]
+    },
+    {
+      "intent": "StandardStopIntent"
     }
   ]
 }

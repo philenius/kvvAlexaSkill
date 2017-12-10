@@ -26,3 +26,8 @@ DepartureIntent ich möchte wissen wann fährt die nächste bahn
 DepartureIntent ich möchte wissen wann die nächste bahn fährt
 DepartureIntent ich möchte abfahrtszeiten wissen
 DepartureIntent ich möchte die abfahrtszeiten wissen
+
+StandardStopIntent standard station festlegen
+StandardStopIntent setze meine standard station
+StandardStopIntent lege meine standard fest
+StandardStopIntent ich möchte meine standard station festlegen
