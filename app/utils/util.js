@@ -101,4 +101,9 @@ module.exports = {
             callback(filter.getDeparturesByRoute(route, departures), null);
         });
     },
+    'random': function(speechOutputArray) {
+        var i = 0;
+        i = Math.floor(Math.random() * speechOutputArray.length);
+        return speechOutputArray[i];
+      },
 };

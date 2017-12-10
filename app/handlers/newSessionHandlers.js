@@ -1,6 +1,7 @@
 'use strict';
 
 const States = require('./states');
+const util = require('../utils/util');
 
 module.exports = {
     'NewSession': function () {
@@ -22,10 +23,10 @@ module.exports = {
     'Unhandled': function () {
     },
     'AMAZON.StopIntent': function () {
-        this.emit(':tell', this.t('STOP_ANSWER'));
+        this.emit(':tell', util.random(this.t('STOP_ANSWER')));
     },
     'AMAZON.CancelIntent': function () {
-        this.emit(':tell', this.t('CANCEL_ANSWER'));
+        this.emit(':tell', util.random(this.t('CANCEL_ANSWER')));
     },
     'AMAZON.HelpIntent': function () {
         this.emit(':tell', this.t('HELP_ANSWER'));
