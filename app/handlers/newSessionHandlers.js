@@ -4,7 +4,9 @@ const States = require('./states');
 
 module.exports = {
     'NewSession': function () {
-        this.handler.state = States.SELECTSTOP;
+        this.emit('LaunchIntent');
+    },
+    'LaunchIntent': function () {
         var cardTitle = 'Willkommen beim KVV';
         var cardContent = 'VBK - Verkehrsbetriebe Karlsruhe';
         var imageObj = {
@@ -13,14 +15,19 @@ module.exports = {
         };
         this.emit(':askWithCard', this.t('WELCOME'), this.t('WELCOME_REPROMPT'), cardTitle, cardContent, imageObj);
     },
-    'LaunchRequest': function () {
+    'DepartureIntent': function () {
+        this.handler.state = States.SELECTSTOP;
+        this.emit(':ask', this.t('DEPARTURE'));
     },
     'Unhandled': function () {
     },
     'AMAZON.StopIntent': function () {
+        this.emit(':tell', this.t('STOP_ANSWER'));
     },
     'AMAZON.CancelIntent': function () {
+        this.emit(':tell', this.t('CANCEL_ANSWER'));
     },
     'AMAZON.HelpIntent': function () {
+        this.emit(':tell', this.t('HELP_ANSWER'));
     }
 };
