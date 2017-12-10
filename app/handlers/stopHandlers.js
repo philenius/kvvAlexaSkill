@@ -13,7 +13,7 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTOP, {
     'StopIntent': function () {
         var that = this;
         var sessionStop = this.event.request.intent.slots.stop.value;
-        this.attributes.sessionStop = sessionStop;
+        this.attributes.data.sessionStop = sessionStop;
         this.handler.state = States.SELECTROUTE;
 
         var apiStop = util.getStopByName(sessionStop);
@@ -21,7 +21,7 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTOP, {
             this.emit(':tell', 'Entschuldige, diese Station ist mir leider unbekannt.');
             return;
         }
-        that.attributes.apiStop = apiStop;
+        this.attributes.data.apiStop = apiStop;
 
         util.getAllDeparturesFromStop(apiStop, function (departures, error) {
             if (error != null) {
@@ -46,7 +46,6 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTOP, {
                     that.emit(':tellWithCard', outputBuilder.buildSpeechOutputForBothDirections(apiStop, apiRoute, relevantDepartures), card[0], card[1]);
                 });
             } else {
-                that.attributes.apiStop = apiStop;
                 that.emit(':ask', 'Alles klar, du möchtest von der Station <break strength="medium"/>' + apiStop.name + ' losfahren. Mit welcher Linie möchtest du fahren?', 'Nenne mir die Linie, mit der du fahren möchtest.');
             }
         });
@@ -55,10 +54,10 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTOP, {
         this.emit(':tell', this.t('UNHANDLED'));
     },
     'AMAZON.StopIntent': function () {
-        this.emit(':tell', this.t('STOP_ANSWER'));
+        this.emit(':tell', util.random(this.t('STOP_ANSWER')));
     },
     'AMAZON.CancelIntent': function () {
-        this.emit(':tell', this.t('CANCEL_ANSWER'));
+        this.emit(':tell', util.random(this.t('CANCEL_ANSWER')));
     },
     'AMAZON.HelpIntent': function () {
         this.emit(':tell', this.t('STOP_INTENT_HELP_ANSWER'));

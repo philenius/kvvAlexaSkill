@@ -15,19 +15,19 @@ module.exports = Alexa.CreateStateHandler(States.SELECTROUTE, {
         var sessionRoute = this.event.request.intent.slots.route.value;
         var sessionRoutePrefix = this.event.request.intent.slots.routePrefix.value;
         if (sessionRoutePrefix !== undefined && sessionRoutePrefix === 'es') {
-            this.attributes.route = 'S' + sessionRoute;
+            this.attributes.data.sessionRoute = 'S' + sessionRoute;
         } else {
-            this.attributes.route = sessionRoute;
+            this.attributes.data.sessionRoute = sessionRoute;
         }
 
-        var apiRoute = util.getRouteByName(this.attributes.route);
+        var apiRoute = util.getRouteByName(this.attributes.data.sessionRoute);
         if (apiRoute === undefined) {
             this.emit(':ask', 'Entschuldige, diese Linie ist mir leider nicht bekannt. Mit welcher Linie möchtest du fahren?', 'Bitte nenne die gewünschte Linie erneut.');
             return;
         }
-        this.attributes.apiRoute = apiRoute;
+        this.attributes.data.apiRoute = apiRoute;
         this.handler.state = States.NONE;
-        var apiStop = this.attributes.apiStop;
+        var apiStop = this.attributes.data.apiStop;
 
         util.getNextDeparturesFromStopForRoute(apiStop, apiRoute, function (data, error) {
             var relevantDepartures = filter.getRelevantDepartures(data);

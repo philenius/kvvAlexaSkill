@@ -10,7 +10,7 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTANDARDSTOP, {
     },
     'StopIntent': function () {
         var sessionStop = this.event.request.intent.slots.stop.value;
-        this.attributes.sessionStop = sessionStop;
+        this.attributes.data.sessionStop = sessionStop;
 
         var apiStop = util.getStopByName(sessionStop);
         if (apiStop == undefined) {
@@ -18,7 +18,7 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTANDARDSTOP, {
                 'Welche Station möchtest du als deine Standard Station festlegen?');
             return;
         }
-        this.attributes.standardStop = apiStop;
+        this.attributes.data.standardStop = apiStop;
         this.emit(':ask', '<say-as interpret-as="interjection">Alles klar</say-as>, ich trage Buxtehude als deine Standard Station ein.<break time="1s"/>' +
             '<say-as interpret-as="interjection">War nur ein Scherz.</say-as> ' +
             'Ich habe {0} verstanden. Ist das richtig?'.format(apiStop.name));
@@ -27,7 +27,7 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTANDARDSTOP, {
         this.emit(':tell', util.random(this.t('SELECT_STANDARD_STOP_CONFIRMATION')));
     },
     'AMAZON.NoIntent': function () {
-        this.attributes.standardStop = null;
+        this.attributes.data.standardStop = {};
         this.emit(':ask', '<say-as interpret-as="interjection">Mist.</say-as> Welche Station meintest du dann?');
     },
     'Unhandled': function () {

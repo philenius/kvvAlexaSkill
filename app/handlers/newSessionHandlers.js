@@ -5,6 +5,9 @@ const util = require('../utils/util');
 
 module.exports = {
     'NewSession': function () {
+        if (Object.keys(this.attributes).length === 0) {
+            this.attributes.data = {};
+        }
         this.emit('LaunchIntent');
     },
     'LaunchIntent': function () {
@@ -25,6 +28,7 @@ module.exports = {
         this.emit(':ask', this.t('STANDARD_STOP'));
     },
     'Unhandled': function () {
+        this.emit(':tell', this.t('UNHANDLED'));
     },
     'AMAZON.StopIntent': function () {
         this.emit(':tell', util.random(this.t('STOP_ANSWER')));
