@@ -33,10 +33,6 @@ module.exports = {
 				'Aktuell sind nicht alle Stationen des gesamten Liniennetzes verfügbar. Aber mein Entwickler arbeitet daran, weitere Stationen nachzutragen. ' +
 				'Ich hoffe, ich konnte dir damit weiterhelfen.'
 			],
-			'SELECT_STANDARD_STOP_CONFIRMATION': [
-				'<say-as interpret-as="interjection">Prima</say-as>, ist erledigt.',
-				'<say-as interpret-as="interjection">Okey dokey</say-as>, ist erledigt.',
-			],
 		}
 	}
 }

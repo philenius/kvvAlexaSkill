@@ -39,9 +39,6 @@
           "type": "routePrefixSlotType"
         }
       ]
-    },
-    {
-      "intent": "StandardStopIntent"
     }
   ]
 }
