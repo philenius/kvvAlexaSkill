@@ -17,16 +17,29 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTOP, {
         this.handler.state = States.SELECTROUTE;
 
         var apiStop = util.getStopByName(sessionStop);
-        if (apiStop === undefined) {
+        if (apiStop == undefined) {
             this.emit(':tell', 'Entschuldige, diese Station ist mir leider unbekannt.');
             return;
         }
-        util.getAllDeparturesFromStop(apiStop, function (data, error) {
-            var departingRoutesCount = filter.getCountOfDifferentRoutesDeparting(data);
+        that.attributes.apiStop = apiStop;
+
+        util.getAllDeparturesFromStop(apiStop, function (departures, error) {
+            if (error != null) {
+                that.emit(':tell', this.t('UNHANDLED'));
+                return;
+            }
+
+            var departingRoutesCount = filter.getCountOfDifferentRoutesDeparting(departures);
+            // If there's only one route departing from this station, then don't ask the user for the route. Instead answer directly with the current departures.
             if (departingRoutesCount == 0) {
                 that.emit(':tell', 'Leider fahren im Moment keine Bahnen von der Station {0}.'.format(apiStop.name));
             } else if (departingRoutesCount == 1) {
-                var apiRoute = util.getRouteByName(data[0].route);
+                var apiRoute = util.getRouteByName(departures[0].route);
+                // The route may still be unknown because KVV invents weirdo routes sometimes...
+                if (apiRoute == undefined) {
+                    that.emit(':ask', 'Alles klar, du möchtest von der Station <break strength="medium"/>' + apiStop.name + ' losfahren. Mit welcher Linie möchtest du fahren?', 'Nenne mir die Linie, mit der du fahren möchtest.');
+                    return;
+                }
                 util.getNextDeparturesFromStopForRoute(apiStop, apiRoute, function (data, error) {
                     var relevantDepartures = filter.getRelevantDepartures(data);
                     var card = outputBuilder.buildCardForBothDirections(apiStop, apiRoute, relevantDepartures);
