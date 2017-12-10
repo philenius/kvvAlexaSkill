@@ -10,6 +10,9 @@
       "intent": "AMAZON.StopIntent"
     },
     {
+      "intent": "DepartureIntent"
+    },
+    {
       "intent": "StopIntent",
       "slots": [
         {
