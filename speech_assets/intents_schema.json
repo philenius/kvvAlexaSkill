@@ -39,6 +39,23 @@
           "type": "routePrefixSlotType"
         }
       ]
+    },
+    {
+      "intent": "DirectDepartureIntent",
+      "slots": [
+        {
+          "name": "stop",
+          "type": "stopSlotType"
+        },
+        {
+          "name": "route",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "routePrefix",
+          "type": "routePrefixSlotType"
+        }
+      ]
     }
   ]
 }

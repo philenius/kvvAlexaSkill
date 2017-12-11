@@ -1,25 +1,17 @@
 'use strict';
 
+const Alexa = require('alexa-sdk');
 const States = require('./states');
 const util = require('../utils/util');
+const outputBuilder = require('../utils/ouputBuilder');
+const filter = require('../utils/filter');
 
-module.exports = {
+module.exports = Alexa.CreateStateHandler(States.DIRECTDEPARTURE, {
     'NewSession': function () {
-        if (Object.keys(this.attributes).length === 0) {
-            this.attributes.data = {};
-        }
-        this.emit('LaunchIntent');
-    },
-    'LaunchIntent': function () {
-        this.emit(':ask', this.t('WELCOME'), this.t('WELCOME_REPROMPT'));
-    },
-    'DepartureIntent': function () {
-        this.handler.state = States.SELECTSTOP;
-        this.emit(':ask', this.t('DEPARTURE'));
+        this.emit('NewSession');
     },
     'DirectDepartureIntent': function () {
-        this.handler.state = States.DIRECTDEPARTURE;
-        this.emitWithState('DirectDepartureIntent');
+        this.emit(':tell', 'Du hast es geschafft!');
     },
     'Unhandled': function () {
         this.emit(':tell', this.t('UNHANDLED'));
@@ -33,4 +25,4 @@ module.exports = {
     'AMAZON.HelpIntent': function () {
         this.emit(':tell', this.t('HELP'));
     }
-};
+});
