@@ -37,7 +37,7 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTOP, {
                 var apiRoute = util.getRouteByName(departures[0].route);
                 // The route may still be unknown because KVV invents weirdo routes sometimes...
                 if (apiRoute == undefined) {
-                    that.emit(':ask', 'Alles klar, du möchtest von der Station <break strength="medium"/>' + apiStop.name + ' losfahren. Mit welcher Linie möchtest du fahren?', 'Nenne mir die Linie, mit der du fahren möchtest.');
+                    that.emit(':ask', this.t('STOP_INTENT_ANSWER', apiStop.name), this.t('STOP_INTENT_ANSWER_REPROMPT'));
                     return;
                 }
                 util.getNextDeparturesFromStopForRoute(apiStop, apiRoute, function (data, error) {
@@ -46,7 +46,7 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTOP, {
                     that.emit(':tellWithCard', outputBuilder.buildSpeechOutputForBothDirections(apiStop, apiRoute, relevantDepartures), card[0], card[1]);
                 });
             } else {
-                that.emit(':ask', 'Alles klar, du möchtest von der Station <break strength="medium"/>' + apiStop.name + ' losfahren. Mit welcher Linie möchtest du fahren?', 'Nenne mir die Linie, mit der du fahren möchtest.');
+                that.emit(':ask', this.t('STOP_INTENT_ANSWER', apiStop.name), this.t('STOP_INTENT_ANSWER_REPROMPT'));
             }
         });
     },
