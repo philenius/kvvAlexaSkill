@@ -14,23 +14,29 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTANDARDSTOP, {
 
         var apiStop = util.getStopByName(sessionStop);
         if (apiStop == undefined) {
-            this.emit(':ask', 'Entschuldige, diese Station ist mir leider unbekannt. Nenne mir bitte erneut deine Station.',
-                'Welche Station möchtest du als deine Standard Station festlegen?');
+            this.emit(':ask', this.t('STANDARD_STOP_UNKNONW_STOP'), this.t('STANDARD_STOP_UNKNONW_STOP_REPROMPT'));
             return;
         }
         this.attributes.data.standardStop = apiStop;
-        this.emit(':ask', '<say-as interpret-as="interjection">Alles klar</say-as>, ich trage Buxtehude als deine Standard Station ein.<break time="1s"/>' +
-            '<say-as interpret-as="interjection">War nur ein Scherz.</say-as> ' +
-            'Ich habe {0} verstanden. Ist das richtig?'.format(apiStop.name));
+        this.emit(':ask', this.t('STANDARD_STOP_ANSWER', apiStop.name));
     },
     'AMAZON.YesIntent': function () {
-        this.emit(':tell', util.random(this.t('SELECT_STANDARD_STOP_CONFIRMATION')));
+        this.emit(':tell', util.random(this.t('STANDARD_STOP_YES')));
     },
     'AMAZON.NoIntent': function () {
         this.attributes.data.standardStop = {};
-        this.emit(':ask', '<say-as interpret-as="interjection">Mist.</say-as> Welche Station meintest du dann?');
+        this.emit(':ask', 'STANDARD_STOP_NO');
     },
     'Unhandled': function () {
         this.emit(':tell', this.t('UNHANDLED'));
     },
+    'AMAZON.StopIntent': function () {
+        this.emit(':tell', util.random(this.t('STOP')));
+    },
+    'AMAZON.CancelIntent': function () {
+        this.emit(':tell', util.random(this.t('CANCEL')));
+    },
+    'AMAZON.HelpIntent': function () {
+        this.emit(':tell', this.t('STANDARD_STOP_HELP'));
+    }
 });
