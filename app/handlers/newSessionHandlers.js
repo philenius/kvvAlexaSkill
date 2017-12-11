@@ -25,12 +25,12 @@ module.exports = {
         this.emit(':tell', this.t('UNHANDLED'));
     },
     'AMAZON.StopIntent': function () {
-        this.emit(':tell', util.random(this.t('STOP_ANSWER')));
+        this.emit(':tell', util.random(this.t('STOP')));
     },
     'AMAZON.CancelIntent': function () {
-        this.emit(':tell', util.random(this.t('CANCEL_ANSWER')));
+        this.emit(':tell', util.random(this.t('CANCEL')));
     },
     'AMAZON.HelpIntent': function () {
-        this.emit(':tell', this.t('HELP_ANSWER'));
+        this.emit(':tell', this.t('HELP'));
     }
 };

@@ -8,7 +8,7 @@ module.exports = {
 		'translation': {
 			'WELCOME': ['<say-as interpret-as="interjection">Willkommen</say-as> beim KVV. Wie kann ich dir weiterhelfen?'],
 			'WELCOME_REPROMPT': ['Sage <break strength="medium"/>was kann ich fragen, wenn du Hilfe benötigst.'],
-			'STOP_ANSWER': [
+			'STOP': [
 				'<say-as interpret-as="interjection">bis dann.</say-as>',
 				'<say-as interpret-as="interjection">bis bald.</say-as>',
 				'<say-as interpret-as="interjection">tschüss.</say-as>',
@@ -19,8 +19,8 @@ module.exports = {
 				'<say-as interpret-as="interjection">schade.</say-as>',
 				'<say-as interpret-as="interjection">tschö.</say-as>',
 			],
-			'CANCEL_ANSWER': ['<say-as interpret-as="interjection">Bis bald.</say-as>'],
-			'HELP_ANSWER': ['<say-as interpret-as="interjection">Moin</say-as>. Du kannst mich nach den Abfahrtszeiten der Bahnen des KVV fragen. ' +
+			'CANCEL': ['<say-as interpret-as="interjection">Bis bald.</say-as>'],
+			'HELP': ['<say-as interpret-as="interjection">Moin</say-as>. Du kannst mich nach den Abfahrtszeiten der Bahnen des KVV fragen. ' +
 				'Sage hierfür: Abfahrtszeiten. Oder: Wann fährt die nächste Bahn? Wenn du den Stationsnamen nicht bei jeder Anfrage angeben möchtest, ' +
 				'dann kannst du deine Standard Station festlegen. Sage hierfür: Standard Station festlegen.'],
 			'UNHANDLED': ['Leider ist bei der Verarbeitung deiner Anfrage ein Fehler aufgetreten.'],
