@@ -32,7 +32,7 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTOP, {
             var departingRoutesCount = filter.getCountOfDifferentRoutesDeparting(departures);
             // If there's only one route departing from this station, then don't ask the user for the route. Instead answer directly with the current departures.
             if (departingRoutesCount == 0) {
-                that.emit(':tell', 'Leider fahren im Moment keine Bahnen von der Station {0}.'.format(apiStop.name));
+                that.emit(':tell', this.t('STOP_INTENT_ANSWER_NO_DEPARTURES', apiStop.name));
             } else if (departingRoutesCount == 1) {
                 var apiRoute = util.getRouteByName(departures[0].route);
                 // The route may still be unknown because KVV invents weirdo routes sometimes...
@@ -54,12 +54,12 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTOP, {
         this.emit(':tell', this.t('UNHANDLED'));
     },
     'AMAZON.StopIntent': function () {
-        this.emit(':tell', util.random(this.t('STOP_ANSWER')));
+        this.emit(':tell', util.random(this.t('STOP')));
     },
     'AMAZON.CancelIntent': function () {
-        this.emit(':tell', util.random(this.t('CANCEL_ANSWER')));
+        this.emit(':tell', util.random(this.t('CANCEL')));
     },
     'AMAZON.HelpIntent': function () {
-        this.emit(':tell', this.t('STOP_INTENT_HELP_ANSWER'));
+        this.emit(':tell', this.t('STOP_INTENT_HELP'));
     }
 });
