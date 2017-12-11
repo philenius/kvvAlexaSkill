@@ -22,7 +22,7 @@ module.exports = Alexa.CreateStateHandler(States.SELECTROUTE, {
 
         var apiRoute = util.getRouteByName(this.attributes.data.sessionRoute);
         if (apiRoute === undefined) {
-            this.emit(':ask', 'Entschuldige, diese Linie ist mir leider nicht bekannt. Mit welcher Linie möchtest du fahren?', 'Bitte nenne die gewünschte Linie erneut.');
+            this.emit(':ask', this.t('ROUTE_HANDLER_UNKNOWN_ROUTE'), this.t('ROUTE_HANDLER_UNKNOWN_ROUTE_REPROMT'));
             return;
         }
         this.attributes.data.apiRoute = apiRoute;
@@ -36,6 +36,15 @@ module.exports = Alexa.CreateStateHandler(States.SELECTROUTE, {
         });
     },
     'Unhandled': function () {
-        this.emit(':tell', 'Entschuldige, diese Linie kenne ich nicht.');
+        this.emit(':tell', this.t('UNHANDLED'));
     },
+    'AMAZON.StopIntent': function () {
+        this.emit(':tell', util.random(this.t('STOP')));
+    },
+    'AMAZON.CancelIntent': function () {
+        this.emit(':tell', util.random(this.t('CANCEL')));
+    },
+    'AMAZON.HelpIntent': function () {
+        this.emit(':tell', this.t('ROUTE_HANDLER_HELP'));
+    }
 });

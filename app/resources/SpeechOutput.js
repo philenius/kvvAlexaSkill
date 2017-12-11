@@ -38,6 +38,19 @@ module.exports = {
 				'<say-as interpret-as="interjection">Prima</say-as>, ist erledigt.',
 				'<say-as interpret-as="interjection">Okey dokey</say-as>, ist erledigt.',
 			],
+			'STANDARD_STOP_NO': ['<say-as interpret-as="interjection">Mist.</say-as> Welche Station meintest du dann?'],
+			'STANDARD_STOP_HELP': [
+				'Mit dieser Funktion kann ich deine Standard Station speichern. Wenn du deine Standard Station festlegst, kannst du mir zukünftig direkt ' +
+				'folgende Frage stellen: <break time="0.5s"/>Wann fährt die nächste S5? Ich werde dann automatisch deine gespeicherte Station auswählen.'
+			],
+			'ROUTE_HANDLER_UNKNOWN_ROUTE': ['Entschuldige, diese Linie ist mir leider nicht bekannt. Mit welcher Linie möchtest du fahren?'],
+			'ROUTE_HANDLER_UNKNOWN_ROUTE_REPROMT': ['Bitte nenne die gewünschte Linie erneut.'],
+			'ROUTE_HANDLER_HELP': [
+				'Damit ich für dich relevante Abfahrtszeiten nennen kann, benötige ich die entsprechende Tram oder S-Bahn-Linie. ' +
+				'Nenne mir einfach den Namen der Linie, wie z.B. <break time="0.1s"/> drei <break time="0.2s"/> oder <break time="0.2s"/> S51. ' +
+				'Da ich davon ausgehe, dass du nicht direkt neben der Haltestelle wohnst, nenne ich dir keine Bahnen, die in weniger als zwei Minuten abfahren.' +
+				'Manchmal kann es vorkommen, dass ich eine Linie noch nicht kenne. <say-as interpret-as="interjection">Aber keine Sorge</say-as>, mein Entwickler arbeitet daran, weitere Tram und S-Bahn-Linien nachzutragen.'
+			],
 		}
 	}
 }
