@@ -36,6 +36,21 @@ module.exports = {
 				'Aktuell sind nicht alle Stationen des gesamten Liniennetzes verfügbar. Aber mein Entwickler arbeitet daran, weitere Stationen nachzutragen. ' +
 				'Ich hoffe, ich konnte dir mit dieser Information weiterhelfen.'
 			],
+			'STANDARD_STOP_ANSWER': [
+				'<say-as interpret-as="interjection">Alles klar</say-as>, ich trage Buxtehude als deine Standard Station ein.<break time="1s"/>' +
+				'<say-as interpret-as="interjection">War nur ein Scherz.</say-as> Ich habe %s verstanden. Ist das richtig?'
+			],
+			'STANDARD_STOP_UNKNONW_STOP': ['Entschuldige, diese Station ist mir leider unbekannt. Nenne mir bitte erneut deine Station.'],
+			'STANDARD_STOP_UNKNONW_STOP_REPROMPT': ['Welche Station möchtest du als deine Standard Station festlegen?'],
+			'STANDARD_STOP_YES': [
+				'<say-as interpret-as="interjection">Prima</say-as>, ist erledigt.',
+				'<say-as interpret-as="interjection">Okey dokey</say-as>, ist erledigt.',
+			],
+			'STANDARD_STOP_NO': ['<say-as interpret-as="interjection">Mist.</say-as> Welche Station meintest du dann?'],
+			'STANDARD_STOP_HELP': [
+				'Mit dieser Funktion kann ich deine Standard Station speichern. Wenn du deine Standard Station festlegst, kannst du mir zukünftig direkt ' +
+				'folgende Frage stellen: <break time="0.5s"/>Wann fährt die nächste S5? Ich werde dann automatisch deine gespeicherte Station auswählen.'
+			],
 			'ROUTE_HANDLER_UNKNOWN_ROUTE': ['Entschuldige, diese Linie ist mir leider nicht bekannt. Mit welcher Linie möchtest du fahren?'],
 			'ROUTE_HANDLER_UNKNOWN_ROUTE_REPROMT': ['Bitte nenne die gewünschte Linie erneut.'],
 			'ROUTE_HANDLER_HELP': [
