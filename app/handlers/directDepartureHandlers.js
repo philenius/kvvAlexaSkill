@@ -11,7 +11,39 @@ module.exports = Alexa.CreateStateHandler(States.DIRECTDEPARTURE, {
         this.emit('NewSession');
     },
     'DirectDepartureIntent': function () {
-        this.emit(':tell', 'Du hast es geschafft!');
+        var that = this;
+        var sessionStop = this.event.request.intent.slots.stop.value;
+        this.attributes.data.sessionStop = sessionStop;
+
+        var apiStop = util.getStopByName(sessionStop);
+        if (apiStop == undefined) {
+            this.emit(':tell', this.t('DIRECT_DEPARTURE_HANDLER_UNKNOWN_STOP'));
+            return;
+        }
+        this.attributes.data.apiStop = apiStop;
+
+        var sessionRoute = this.event.request.intent.slots.route.value;
+        var sessionRoutePrefix = this.event.request.intent.slots.routePrefix.value;
+        if (sessionRoutePrefix !== undefined && sessionRoutePrefix === 'es') {
+            this.attributes.data.sessionRoute = 'S' + sessionRoute;
+        } else {
+            this.attributes.data.sessionRoute = sessionRoute;
+        }
+
+        var apiRoute = util.getRouteByName(this.attributes.data.sessionRoute);
+        if (apiRoute === undefined) {
+            this.emit(':tell', this.t('DIRECT_DEPARTURE_HANDLER_UNKNOWN_ROUTE'));
+            return;
+        }
+        this.attributes.data.apiRoute = apiRoute;
+        
+        this.handler.state = States.NONE;
+
+        util.getNextDeparturesFromStopForRoute(apiStop, apiRoute, function (data, error) {
+            var relevantDepartures = filter.getRelevantDepartures(data);
+            var card = outputBuilder.buildCardForBothDirections(apiStop, apiRoute, relevantDepartures);
+            that.emit(':tellWithCard', outputBuilder.buildSpeechOutputForBothDirections(apiStop, apiRoute, relevantDepartures), card[0], card[1]);
+        });
     },
     'Unhandled': function () {
         this.emit(':tell', this.t('UNHANDLED'));

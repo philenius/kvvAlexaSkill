@@ -44,6 +44,8 @@ module.exports = {
 				'Da ich davon ausgehe, dass du nicht direkt neben der Haltestelle wohnst, nenne ich dir keine Bahnen, die in weniger als zwei Minuten abfahren.' +
 				'Manchmal kann es vorkommen, dass ich eine Linie noch nicht kenne. <say-as interpret-as="interjection">Aber keine Sorge</say-as>, mein Entwickler arbeitet daran, weitere Tram und S-Bahn-Linien nachzutragen.'
 			],
+			'DIRECT_DEPARTURE_HANDLER_UNKNOWN_STOP': ['Entschuldige, diese Station ist mir leider nicht bekannt.'],
+			'DIRECT_DEPARTURE_HANDLER_UNKNOWN_ROUTE': ['Entschuldige, diese Linie ist mir leider nicht bekannt.'],
 		}
 	}
 }
