@@ -21,6 +21,10 @@ module.exports = {
         this.handler.state = States.DIRECTDEPARTURE;
         this.emitWithState('DirectDepartureIntent');
     },
+    'StandardStopIntent': function () {
+        this.handler.state = States.SELECTSTANDARDSTOP;
+        this.emit(':ask', this.t('STANDARD_STOP'));
+    },
     'Unhandled': function () {
         this.emit(':tell', this.t('UNHANDLED'));
     },
