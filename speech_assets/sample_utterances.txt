@@ -43,3 +43,11 @@ DirectDepartureIntent wann fährt die {routePrefix} {route} von {stop}
 DirectDepartureIntent wann fährt die {routePrefix} {route} von der {stop}
 DirectDepartureIntent wann fährt die {routePrefix} {route} von dem {stop}
 DirectDepartureIntent wann fährt die {routePrefix} {route} vom {stop}
+
+StandardStopIntent standard station festlegen
+StandardStopIntent standard station setzen
+StandardStopIntent setze standard station
+StandardStopIntent setze meine standard station
+StandardStopIntent lege meine standard station fest
+StandardStopIntent ich möchte meine standard station setzen
+StandardStopIntent ich möchte meine standard station festlegen
