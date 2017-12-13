@@ -10,7 +10,7 @@ module.exports = {
      */
     'buildSpeechOutputForBothDirections': function (stop, route, departures) {
         if (departures == null || departures.length == 0) {
-            return speechOutput = 'Leider fahren im Moment keine Bahnen der Linie {0} <break strength="medium"/> von der Station {1}.'.format(route.name, stop.name);
+            return speechOutput = 'Leider fahren im Moment keine Bahnen der Linie {0} <break strength="medium"/> von der Haltestelle {1}.'.format(route.name, stop.name);
         }
 
         var departuresDirection1 = filter.getDeparturesByDirection('1', departures);
