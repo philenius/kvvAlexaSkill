@@ -8,6 +8,10 @@ module.exports = {
         if (Object.keys(this.attributes).length === 0) {
             this.attributes.data = {};
         }
+        delete this.attributes.data.sessionStop;
+        delete this.attributes.data.sessionRoute;
+        delete this.attributes.data.apiStop;
+        delete this.attributes.data.apiRoute;
         this.emit('LaunchIntent');
     },
     'LaunchIntent': function () {
