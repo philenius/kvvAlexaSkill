@@ -26,6 +26,7 @@ module.exports = {
 			],
 			'UNHANDLED': ['Leider ist bei der Verarbeitung deiner Anfrage ein Fehler aufgetreten.'],
 			'DEPARTURE': ['Von welcher Haltestelle möchtest du losfahren?'],
+			'STANDARD_STOP': ['Welche Station soll ich als deine Standard Station festlegen?'],
 			'STOP_HANDLER_UNKNOWN_STOP': ['Entschuldige, diese Haltestelle ist mir leider nicht bekannt. Von welcher Haltestelle möchtest du losfahren?'],
 			'STOP_HANDLER_UNKNOWN_STOP_REPROMPT': ['Bitte nenne die gewünschte Haltestelle erneut.'],
 			'STOP_HANDLER_ANSWER': ['<say-as interpret-as="interjection">Alles klar,</say-as> du möchtest von der Haltestelle <break strength="medium"/> %s losfahren. Mit welcher Linie möchtest du fahren?'],
