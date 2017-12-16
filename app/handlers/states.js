@@ -2,6 +2,7 @@
 
 module.exports = {
     NONE: '',
+    MAIN: '_MAIN',
     SELECTSTOP: '_SELECTSTOP',
     SELECTROUTE: '_SELECTROUTE',
     DIRECTDEPARTURE: '_DIRECTDEPARTURE',

@@ -4,6 +4,7 @@ require('./app/utils/common');
 
 const Alexa = require('alexa-sdk');
 const newSessionHandlers = require('./app/handlers/newSessionHandlers');
+const mainHandlers = require('./app/handlers/mainHandlers');
 const stopHandlers = require('./app/handlers/stopHandlers');
 const routeHandlers = require('./app/handlers/routeHandlers');
 const directDepartureHandlers = require('./app/handlers/directDepartureHandlers');
@@ -16,6 +17,6 @@ exports.handler = function (event, context, callback) {
     alexa.resources = SpeechOutput;
     alexa.appId = APP_ID;
     alexa.dynamoDBTableName = 'KvvAlexaSkillUserData';
-    alexa.registerHandlers(newSessionHandlers, stopHandlers, routeHandlers, directDepartureHandlers, standardStopHandlers);
+    alexa.registerHandlers(newSessionHandlers, mainHandlers, stopHandlers, routeHandlers, directDepartureHandlers, standardStopHandlers);
     alexa.execute();
 };

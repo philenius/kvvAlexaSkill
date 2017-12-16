@@ -11,30 +11,7 @@ module.exports = {
         this.emit('LaunchIntent');
     },
     'LaunchIntent': function () {
+        this.handler.state = States.MAIN;
         this.emit(':ask', this.t('WELCOME'), this.t('WELCOME_REPROMPT'));
     },
-    'DepartureIntent': function () {
-        this.handler.state = States.SELECTSTOP;
-        this.emit(':ask', this.t('DEPARTURE'));
-    },
-    'DirectDepartureIntent': function () {
-        this.handler.state = States.DIRECTDEPARTURE;
-        this.emitWithState('DirectDepartureIntent');
-    },
-    'StandardStopIntent': function () {
-        this.handler.state = States.SELECTSTANDARDSTOP;
-        this.emit(':ask', this.t('STANDARD_STOP'));
-    },
-    'Unhandled': function () {
-        this.emit(':tell', this.t('UNHANDLED'));
-    },
-    'AMAZON.StopIntent': function () {
-        this.emit(':tell', util.random(this.t('STOP')));
-    },
-    'AMAZON.CancelIntent': function () {
-        this.emit(':tell', util.random(this.t('CANCEL')));
-    },
-    'AMAZON.HelpIntent': function () {
-        this.emit(':tell', this.t('HELP'));
-    }
 };
