@@ -46,8 +46,13 @@ module.exports = {
         m.set('s6', new Route('S6'));
         m.set('s7', new Route('S7'));
         m.set('s8', new Route('S8'));
+        m.set('s9', new Route('S9'));
         m.set('s11', new Route('S11'));
+        m.set('s31', new Route('S31'));
+        m.set('s32', new Route('S32'));
         m.set('s33', new Route('S33'));
+        m.set('s41', new Route('S41'));
+        m.set('s42', new Route('S42'));
         m.set('s51', new Route('S51'));
         m.set('s52', new Route('S52'));
         m.set('s71', new Route('S71'));

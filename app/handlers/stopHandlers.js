@@ -17,8 +17,7 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTOP, {
 
         var apiStop = util.getStopByName(sessionStop);
         if (apiStop === undefined) {
-            this.handler.state = States.NONE;
-            this.emit(':tell', 'Entschuldige, diese Station ist mir leider unbekannt.');
+            this.emit(':ask', this.t('STOP_HANDLER_UNKNOWN_STOP'), this.t('STOP_HANDLER_UNKNOWN_STOP_REPROMPT'));
             return;
         }
         this.attributes.data.apiStop = apiStop;
@@ -31,16 +30,16 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTOP, {
             }
 
             var departingRoutesCount = filter.getCountOfDifferentRoutesDeparting(departures);
-            // If there's only one route departing from this station, then don't ask the user for the route. Instead answer directly with the current departures.
+            // If there's only one route departing from this stop, then don't ask the user for the route. Instead answer directly with the current departures.
             if (departingRoutesCount == 0) {
                 that.handler.state = States.NONE;
-                that.emit(':tell', that.t('STOP_INTENT_ANSWER_NO_DEPARTURES', apiStop.name));
+                that.emit(':tell', that.t('STOP_HANDLER_ANSWER_NO_DEPARTURES', apiStop.name));
             } else if (departingRoutesCount == 1) {
                 var apiRoute = util.getRouteByName(departures[0].route);
                 // The route may still be unknown because KVV invents weirdo routes sometimes...
                 if (apiRoute == undefined) {
                     that.handler.state = States.SELECTROUTE;
-                    that.emit(':ask', that.t('STOP_INTENT_ANSWER', apiStop.name), that.t('STOP_INTENT_ANSWER_REPROMPT'));
+                    that.emit(':ask', that.t('STOP_HANDLER_ANSWER', apiStop.name), that.t('STOP_HANDLER_ANSWER_REPROMPT'));
                     return;
                 }
                 util.getNextDeparturesFromStopForRoute(apiStop, apiRoute, function (data, error) {
@@ -51,7 +50,7 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTOP, {
                 });
             } else {
                 that.handler.state = States.SELECTROUTE;
-                that.emit(':ask', that.t('STOP_INTENT_ANSWER', apiStop.name), that.t('STOP_INTENT_ANSWER_REPROMPT'));
+                that.emit(':ask', that.t('STOP_HANDLER_ANSWER', apiStop.name), that.t('STOP_HANDLER_ANSWER_REPROMPT'));
             }
         });
     },
@@ -65,6 +64,6 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTOP, {
         this.emit(':tell', util.random(this.t('CANCEL')));
     },
     'AMAZON.HelpIntent': function () {
-        this.emit(':tell', this.t('STOP_INTENT_HELP'));
+        this.emit(':tell', this.t('STOP_HANDLER_HELP'));
     }
 });

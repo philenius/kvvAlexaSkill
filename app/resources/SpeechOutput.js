@@ -20,20 +20,22 @@ module.exports = {
 				'<say-as interpret-as="interjection">tschö.</say-as>',
 			],
 			'CANCEL': ['<say-as interpret-as="interjection">Bis bald.</say-as>'],
-			'HELP': ['<say-as interpret-as="interjection">Moin</say-as>. Du kannst mich nach den Abfahrtszeiten der Bahnen des KVV fragen. ' +
-				'Sage hierfür: Abfahrtszeiten. Oder: Wann fährt die nächste Bahn? Wenn du den Stationsnamen nicht bei jeder Anfrage angeben möchtest, ' +
-				'dann kannst du deine Standard Station festlegen. Sage hierfür: Standard Station festlegen.'],
+			'HELP': [
+				'<say-as interpret-as="interjection">Moin</say-as>. Du kannst mich nach den Abfahrtszeiten der Bahnen des KVV fragen. ' +
+				'Sage hierfür: Abfahrtszeiten. Oder: Wann fährt die nächste Bahn? Du kannst auch direkt sagen: Wann fährt die nächste S51 von Hauptbahnhof Vorplatz?'
+			],
 			'UNHANDLED': ['Leider ist bei der Verarbeitung deiner Anfrage ein Fehler aufgetreten.'],
-			'DEPARTURE': ['Von welcher Station möchtest du losfahren?'],
-			'STANDARD_STOP': ['Welche Station soll ich als deine Standard Station festlegen?'],
-			'STOP_INTENT_ANSWER': ['<say-as interpret-as="interjection">Alles klar,</say-as> du möchtest von der Station <break strength="medium"/> %s losfahren. Mit welcher Linie möchtest du fahren?'],
-			'STOP_INTENT_ANSWER_REPROMPT': ['Nenne mir die Linie, mit der du fahren möchtest.'],
-			'STOP_INTENT_ANSWER_NO_DEPARTURES': ['Leider fahren im Moment keine Bahnen von der Station %s.'],
-			'STOP_INTENT_HELP': [
-				'<p>Um die aktuellen Abfahrtszeiten zu erhalten, musst du mir den Namen einer Station nennen. ' +
-				'Bitte gebe den Namen der Station dabei exakt an. Bei einer Angabe wie zum Beispiel Europaplatz kann ich ansonsten nicht entscheiden, ' +
+			'DEPARTURE': ['Von welcher Haltestelle möchtest du losfahren?'],
+			'STOP_HANDLER_UNKNOWN_STOP': ['Entschuldige, diese Haltestelle ist mir leider nicht bekannt. Von welcher Haltestelle möchtest du losfahren?'],
+			'STOP_HANDLER_UNKNOWN_STOP_REPROMPT': ['Bitte nenne die gewünschte Haltestelle erneut.'],
+			'STOP_HANDLER_ANSWER': ['<say-as interpret-as="interjection">Alles klar,</say-as> du möchtest von der Haltestelle <break strength="medium"/> %s losfahren. Mit welcher Linie möchtest du fahren?'],
+			'STOP_HANDLER_ANSWER_REPROMPT': ['Nenne mir die Linie, mit der du fahren möchtest.'],
+			'STOP_HANDLER_ANSWER_NO_DEPARTURES': ['Leider fahren im Moment keine Bahnen von der Haltestelle %s.'],
+			'STOP_HANDLER_HELP': [
+				'<p>Um die aktuellen Abfahrtszeiten zu erhalten, musst du mir den Namen einer Haltestelle nennen. ' +
+				'Bitte gebe den Namen der Haltestelle dabei exakt an. Bei einer Angabe wie zum Beispiel Europaplatz kann ich ansonsten nicht entscheiden, ' +
 				'ob du Europaplatz Sparkstraße oder Kaiserstraße meinst. Den Städtenamen musst du nicht angeben.</p>' +
-				'Aktuell sind nicht alle Stationen des gesamten Liniennetzes verfügbar. Aber mein Entwickler arbeitet daran, weitere Stationen nachzutragen. ' +
+				'Aktuell sind nicht alle Haltestellen des gesamten Liniennetzes verfügbar. Aber mein Entwickler arbeitet daran, weitere Haltestellen nachzutragen. ' +
 				'Ich hoffe, ich konnte dir mit dieser Information weiterhelfen.'
 			],
 			'STANDARD_STOP_ANSWER': [
@@ -59,7 +61,7 @@ module.exports = {
 				'Da ich davon ausgehe, dass du nicht direkt neben der Haltestelle wohnst, nenne ich dir keine Bahnen, die in weniger als zwei Minuten abfahren.' +
 				'Manchmal kann es vorkommen, dass ich eine Linie noch nicht kenne. <say-as interpret-as="interjection">Aber keine Sorge</say-as>, mein Entwickler arbeitet daran, weitere Tram und S-Bahn-Linien nachzutragen.'
 			],
-			'DIRECT_DEPARTURE_HANDLER_UNKNOWN_STOP': ['Entschuldige, diese Station ist mir leider nicht bekannt.'],
+			'DIRECT_DEPARTURE_HANDLER_UNKNOWN_STOP': ['Entschuldige, diese Haltestelle ist mir leider nicht bekannt.'],
 			'DIRECT_DEPARTURE_HANDLER_UNKNOWN_ROUTE': ['Entschuldige, diese Linie ist mir leider nicht bekannt.'],
 		}
 	}
