@@ -27,10 +27,10 @@ DepartureIntent ich möchte wissen wann die nächste bahn fährt
 DepartureIntent ich möchte abfahrtszeiten wissen
 DepartureIntent ich möchte die abfahrtszeiten wissen
 
-DirectDepartureIntent wann fährt die nächste {route}
-DirectDepartureIntent wann fährt die nächste {routePrefix} {route}
 DirectDepartureIntent wann fährt die {route}
 DirectDepartureIntent wann fährt die {routePrefix} {route}
+DirectDepartureIntent wann fährt die nächste {route}
+DirectDepartureIntent wann fährt die nächste {routePrefix} {route}
 
 DirectDepartureIntent wann fährt die nächste {route} von {stop}
 DirectDepartureIntent wann fährt die nächste {route} von der {stop}
