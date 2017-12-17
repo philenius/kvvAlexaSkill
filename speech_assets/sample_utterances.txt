@@ -61,3 +61,11 @@ StandardStopIntent setze meine standard haltestelle
 StandardStopIntent lege meine standard haltestelle fest
 StandardStopIntent ich möchte meine standard haltestelle setzen
 StandardStopIntent ich möchte meine standard haltestelle festlegen
+
+StandardStopIntent standard station festlegen
+StandardStopIntent standard station setzen
+StandardStopIntent setze standard station
+StandardStopIntent setze meine standard station
+StandardStopIntent lege meine standard station fest
+StandardStopIntent ich möchte meine standard station setzen
+StandardStopIntent ich möchte meine standard station festlegen
