@@ -17,16 +17,18 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTANDARDSTOP, {
             this.emit(':ask', this.t('STANDARD_STOP_UNKNONW_STOP'), this.t('STANDARD_STOP_UNKNONW_STOP_REPROMPT'));
             return;
         }
-        this.attributes.data.standardStop = apiStop;
+        this.attributes.data.tempStandardStop = apiStop;
         this.emit(':ask', this.t('STANDARD_STOP_ANSWER', apiStop.name));
     },
     'AMAZON.YesIntent': function () {
+        this.attributes.data.standardStop = this.attributes.data.tempStandardStop;
+        delete this.attributes.data.tempStandardStop;
         this.handler.state = States.MAIN;
-        this.emit(':tell', util.random(this.t('STANDARD_STOP_YES')) + ' ' + this.t('HOW_CAN_I_HELP_YOU'));
+        this.emit(':ask', util.random(this.t('STANDARD_STOP_YES')) + ' ' + this.t('HOW_CAN_I_HELP_YOU'));
     },
     'AMAZON.NoIntent': function () {
-        this.attributes.data.standardStop = {};
-        this.emit(':ask', 'STANDARD_STOP_NO');
+        delete this.attributes.data.tempStandardStop;
+        this.emit(':ask', this.t('STANDARD_STOP_NO'));
     },
     'Unhandled': function () {
         this.emit(':tell', this.t('UNHANDLED'));
