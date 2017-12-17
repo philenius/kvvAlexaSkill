@@ -25,8 +25,9 @@ module.exports = {
 				'Sage hierfür: Abfahrtszeiten. Oder: Wann fährt die nächste Bahn? Du kannst auch direkt sagen: Wann fährt die nächste S51 von Hauptbahnhof Vorplatz?'
 			],
 			'UNHANDLED': ['Leider ist bei der Verarbeitung deiner Anfrage ein Fehler aufgetreten.'],
+			'HOW_CAN_I_HELP_YOU': ['Wie kann ich dir noch behilflich sein?'],
 			'DEPARTURE': ['Von welcher Haltestelle möchtest du losfahren?'],
-			'STANDARD_STOP': ['Welche Station soll ich als deine Standard Station festlegen?'],
+			'STANDARD_STOP': ['Welche Haltestelle soll ich als deine Standard Haltestelle festlegen?'],
 			'STOP_HANDLER_UNKNOWN_STOP': ['Entschuldige, diese Haltestelle ist mir leider nicht bekannt. Von welcher Haltestelle möchtest du losfahren?'],
 			'STOP_HANDLER_UNKNOWN_STOP_REPROMPT': ['Bitte nenne die gewünschte Haltestelle erneut.'],
 			'STOP_HANDLER_ANSWER': ['<say-as interpret-as="interjection">Alles klar,</say-as> du möchtest von der Haltestelle <break strength="medium"/> %s losfahren. Mit welcher Linie möchtest du fahren?'],
@@ -40,19 +41,19 @@ module.exports = {
 				'Ich hoffe, ich konnte dir mit dieser Information weiterhelfen.'
 			],
 			'STANDARD_STOP_ANSWER': [
-				'<say-as interpret-as="interjection">Alles klar</say-as>, ich trage Buxtehude als deine Standard Station ein.<break time="1s"/>' +
+				'<say-as interpret-as="interjection">Alles klar</say-as>, ich trage Buxtehude als deine Standard Haltestelle ein.<break time="1s"/>' +
 				'<say-as interpret-as="interjection">War nur ein Scherz.</say-as> Ich habe %s verstanden. Ist das richtig?'
 			],
-			'STANDARD_STOP_UNKNONW_STOP': ['Entschuldige, diese Station ist mir leider unbekannt. Nenne mir bitte erneut deine Station.'],
-			'STANDARD_STOP_UNKNONW_STOP_REPROMPT': ['Welche Station möchtest du als deine Standard Station festlegen?'],
+			'STANDARD_STOP_UNKNONW_STOP': ['Entschuldige, diese Haltestelle ist mir leider unbekannt. Nenne mir bitte erneut deine Haltestelle.'],
+			'STANDARD_STOP_UNKNONW_STOP_REPROMPT': ['Welche Haltestelle möchtest du als deine Standard Haltestelle festlegen?'],
 			'STANDARD_STOP_YES': [
 				'<say-as interpret-as="interjection">Prima</say-as>, ist erledigt.',
 				'<say-as interpret-as="interjection">Okey dokey</say-as>, ist erledigt.',
 			],
-			'STANDARD_STOP_NO': ['<say-as interpret-as="interjection">Mist.</say-as> Welche Station meintest du dann?'],
+			'STANDARD_STOP_NO': ['<say-as interpret-as="interjection">Mist.</say-as> Welche Haltestelle meintest du dann?'],
 			'STANDARD_STOP_HELP': [
-				'Mit dieser Funktion kann ich deine Standard Station speichern. Wenn du deine Standard Station festlegst, kannst du mir zukünftig direkt ' +
-				'folgende Frage stellen: <break time="0.5s"/>Wann fährt die nächste S5? Ich werde dann automatisch deine gespeicherte Station auswählen.'
+				'Mit dieser Funktion kann ich deine Standard Haltestelle speichern. Wenn du deine Standard Haltestelle festlegst, kannst du mir zukünftig direkt ' +
+				'folgende Frage stellen: <break time="0.5s"/>Wann fährt die nächste S5? Ich werde dann automatisch deine gespeicherte Haltestelle auswählen.'
 			],
 			'ROUTE_HANDLER_UNKNOWN_ROUTE': ['Entschuldige, diese Linie ist mir leider nicht bekannt. Mit welcher Linie möchtest du fahren?'],
 			'ROUTE_HANDLER_UNKNOWN_ROUTE_REPROMT': ['Bitte nenne die gewünschte Linie erneut.'],
