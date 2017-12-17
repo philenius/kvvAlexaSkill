@@ -65,6 +65,9 @@ module.exports = {
 			],
 			'DIRECT_DEPARTURE_HANDLER_UNKNOWN_STOP': ['Entschuldige, diese Haltestelle ist mir leider nicht bekannt.'],
 			'DIRECT_DEPARTURE_HANDLER_UNKNOWN_ROUTE': ['Entschuldige, diese Linie ist mir leider nicht bekannt.'],
+			'DIRECT_DEPARTURE_HANDLER_NO_STANDARD_STOP': ['Um nicht bei jeder Anfrage die Haltestelle angeben zu müssen, kannst du eine Haltestelle als deinen Standard ' +
+				'festlegen. Zum jetzigen Zeitpunkt hast du noch keinen gesetzt. Möchtest du dies jetzt ändern?'],
+			'DIRECT_DEPARTURE_HANDLER_SELECT_STANDARD_STOP': ['Welche Haltestelle soll ich als deine Standard Haltestelle festlegen?'],
 		}
 	}
 }

@@ -12,15 +12,27 @@ module.exports = Alexa.CreateStateHandler(States.DIRECTDEPARTURE, {
     },
     'DirectDepartureIntent': function () {
         var that = this;
-        var sessionStop = this.event.request.intent.slots.stop.value;
-        this.attributes.data.sessionStop = sessionStop;
-
-        var apiStop = util.getStopByName(sessionStop);
-        if (apiStop == undefined) {
-            this.handler.state = States.NONE;
-            this.emit(':tell', this.t('DIRECT_DEPARTURE_HANDLER_UNKNOWN_STOP'));
-            return;
+        var apiStop = {};
+        var sessionStop = '';
+        if (this.event.request.intent.slots.stop.hasOwnProperty('value')) {
+            // select stop by event data
+            sessionStop = this.event.request.intent.slots.stop.value;
+            apiStop = util.getStopByName(sessionStop);
+            if (typeof apiStop === 'undefined' || Object.keys(apiStop).length === 0) {
+                this.emit(':tell', this.t('DIRECT_DEPARTURE_HANDLER_UNKNOWN_STOP'));
+                return;
+            }
+        } else {
+            // select standard stop
+            if (typeof this.attributes.data.standardStop === 'undefined') {
+                this.emit(':ask', this.t('DIRECT_DEPARTURE_HANDLER_NO_STANDARD_STOP'));
+                return;
+            }
+            apiStop = this.attributes.data.standardStop;
+            sessionStop = apiStop.name;
         }
+
+        this.attributes.data.sessionStop = sessionStop;
         this.attributes.data.apiStop = apiStop;
 
         var sessionRoute = this.event.request.intent.slots.route.value;
@@ -38,13 +50,21 @@ module.exports = Alexa.CreateStateHandler(States.DIRECTDEPARTURE, {
             return;
         }
         this.attributes.data.apiRoute = apiRoute;
-        
+
         util.getNextDeparturesFromStopForRoute(apiStop, apiRoute, function (data, error) {
             var relevantDepartures = filter.getRelevantDepartures(data);
             var card = outputBuilder.buildCardForBothDirections(apiStop, apiRoute, relevantDepartures);
             that.handler.state = States.NONE;
             that.emit(':tellWithCard', outputBuilder.buildSpeechOutputForBothDirections(apiStop, apiRoute, relevantDepartures), card[0], card[1]);
         });
+    },
+    'AMAZON.YesIntent': function () {
+        this.handler.state = States.SELECTSTANDARDSTOP;
+        this.emit(':ask', this.t('DIRECT_DEPARTURE_HANDLER_SELECT_STANDARD_STOP'));
+    },
+    'AMAZON.NoIntent': function () {
+        this.handler.state = States.MAIN;
+        this.emit(':ask', this.t('HOW_CAN_I_HELP_YOU'));
     },
     'Unhandled': function () {
         this.emit(':tell', this.t('UNHANDLED'));
