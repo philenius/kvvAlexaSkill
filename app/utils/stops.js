@@ -2255,4 +2255,154 @@ module.exports = [
         "lat": 48.9459476,
         "lon": 8.48916531
     },
+    {
+        "id": "de:8215:210",
+        "names": ["Forchheim Messe", "Forchheim Leichtsandstraße"],
+        "lat": 48.98211574,
+        "lon": 8.32351687
+    },
+    {
+        "id": "de:8215:212",
+        "names": ["Forchheim Hallenbad"],
+        "lat": 48.9786095,
+        "lon": 8.31752628
+    },
+    {
+        "id": "de:8215:213",
+        "names": ["Forchheim Hauptstraße"],
+        "lat": 48.97475611,
+        "lon": 8.31218331
+    },
+    {
+        "id": "de:8215:214",
+        "names": ["Forchheim Oberfeldstraße"],
+        "lat": 48.97037004,
+        "lon": 8.30802317
+    },
+    {
+        "id": "de:8215:220",
+        "names": ["Mörsch Merkurstraße"],
+        "lat": 48.95288401,
+        "lon": 8.29087021
+    },
+    {
+        "id": "de:8215:218",
+        "names": ["Mörsch Römerstraße"],
+        "lat": 48.961584,
+        "lon": 8.29749298
+    },
+    {
+        "id": "de:8215:1500",
+        "names": ["Mörsch Am Hang"],
+        "lat": 48.95645704,
+        "lon": 8.28554885
+    },
+    {
+        "id": "de:8215:1501",
+        "names": ["Mörsch Bach West"],
+        "lat": 48.95900094,
+        "lon": 8.2839558
+    },
+    {
+        "id": "de:8215:219",
+        "names": ["Mörsch Rheinaustraße"],
+        "lat": 48.95839003,
+        "lon": 8.29426059
+    },
+    {
+        "id": "de:8215:217",
+        "names": ["Mörsch Narzissenstraße"],
+        "lat": 48.96630363,
+        "lon": 8.30321741
+    },
+    {
+        "id": "de:8215:215",
+        "names": ["Mörsch Rösselsbrünnle"],
+        "lat": 48.9675738,
+        "lon": 8.30508448
+    },
+    {
+        "id": "de:8215:1124",
+        "names": ["Eggenstein Süd"],
+        "lat": 49.07116192,
+        "lon": 8.39607665
+    },
+    {
+        "id": "de:8215:1122",
+        "names": ["Eggenstein Spöcker Weg"],
+        "lat": 49.07962369,
+        "lon": 8.39958779
+    },
+    {
+        "id": "de:8215:1120",
+        "names": ["Eggenstein Bahnhof"],
+        "lat": 49.07570374,
+        "lon": 8.39796518
+    },
+    {
+        "id": "de:8215:1123",
+        "names": ["Eggenstein Schweriner Straße"],
+        "lat": 49.08555324,
+        "lon": 8.40206264
+    },
+    {
+        "id": "de:8215:1131",
+        "names": ["Leopoldshafen Viermorgen"],
+        "lat": 49.09034825,
+        "lon": 8.40077284
+    },
+    {
+        "id": "de:8215:1132",
+        "names": ["Leopoldshafen Leopoldstraße"],
+        "lat": 49.09678729,
+        "lon": 8.40092811
+    },
+    {
+        "id": "de:8215:1133",
+        "names": ["Leopoldshafen Frankfurter Straße"],
+        "lat": 49.10109452,
+        "lon": 8.40442309
+    },
+    {
+        "id": "de:8215:1151",
+        "names": ["Linkenheim Süd"],
+        "lat": 49.11650823,
+        "lon": 8.41174537
+    },
+    {
+        "id": "de:8215:1152",
+        "names": ["Linkenheim Friedrichsstraße"],
+        "lat": 49.11973266,
+        "lon": 8.40926873
+    },
+    {
+        "id": "de:8215:1153",
+        "names": ["Linkenheim Rathaus"],
+        "lat": 49.12317165,
+        "lon": 8.40830996
+    },
+    {
+        "id": "de:8215:1154",
+        "names": ["Linkenheim Schulzentrum"],
+        "lat": 49.12727798,
+        "lon": 8.41301552
+    },
+    {
+        "id": "de:8215:1155",
+        "names": ["Hochstetten Grenzstraße"],
+        "lat": 49.12951295,
+        "lon": 8.41577067
+    },
+    {
+        "id": "de:8215:1156",
+        "names": ["Hochstetten Altenheim"],
+        "lat": 49.13241294,
+        "lon": 8.41846347
+    },
+    {
+        "id": "de:8215:1157",
+        "names": ["Hochstetten"],
+        "lat": 49.13356812,
+        "lon": 8.41573671
+    },
 ];
