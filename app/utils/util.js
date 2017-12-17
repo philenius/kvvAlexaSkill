@@ -5,28 +5,20 @@ const Stop = require('../models/stop');
 const Route = require('../models/route');
 const time = require('./time');
 const filter = require('./filter');
+const stops = require('./stops');
 
 module.exports = {
     'getStopByName': function (stopName) {
-        var m = new Map();
-        m.set('duale hochschule', new Stop('Duale Hochschule', 'de:8212:12'));
-        m.set('ebertstraße', new Stop('Ebertstraße', 'de:8212:91'));
-        m.set('europaplatz kaiserstraße', new Stop('Europaplatz Kaiserstraße', 'de:8212:31'));
-        m.set('europaplatz karlstraße', new Stop('Europaplatz Karlsstraße', 'de:8212:60'));
-        m.set('hauptbahnhof vorplatz', new Stop('Hauptbahnhof Vorplatz', 'de:8212:89'));
-        m.set('karlstor', new Stop('Karlstor', 'de:8212:61'));
-        m.set('kronenplatz erler-straße', new Stop('kKronenplatz Erler-Straße', 'de:8212:80'));
-        m.set('lassallestraße', new Stop('Lassallestraße', 'de:8212:526'));
-        m.set('mühlburger tor grashofstraße', new Stop('Mühlburger Tor Grashofstraße', 'de:8212:321'));
-        m.set('mühlburger tor kaiserallee', new Stop('Mühlburger Tor Kaiserallee', 'de:8212:49'));
-        m.set('neureut heide', new Stop('Neureut-Heide', 'de:8212:13'));
-        m.set('poststraße', new Stop('Poststraße', 'de:8212:98'));
-        m.set('rüppurer tor', new Stop('Rüppurer Tor', 'de:8212:85'));
-        m.set('schillerstraße', new Stop('Schillerstraße', 'de:8212:40'));
-        m.set('siemensallee', new Stop('Siemensallee', 'de:8212:525'));
-        m.set('yorkstraße', new Stop('Yorckstraße', 'de:8212:41'));
-        m.set('zkm', new Stop('ZKM', 'de:8212:65'));
-
+        var m = new Map();        
+        stops.forEach(stop => {
+            if (stop.names.length > 1) {
+                stop.names.forEach(stopName => {
+                    m.set(stopName.toLowerCase(), new Stop(stopName, stop.id, stop.lat, stop.lon));
+                })
+            } else {
+                m.set(stop.names[0].toLowerCase(), new Stop(stop.names[0], stop.id, stop.lat, stop.lon));
+            }
+        });
         return m.get(stopName.toLowerCase());
     },
     'getRouteByName': function (routeName) {
