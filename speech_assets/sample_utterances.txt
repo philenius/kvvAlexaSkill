@@ -5,6 +5,11 @@ AMAZON.HelpIntent was kann ich sagen
 AMAZON.HelpIntent was kann ich fragen
 AMAZON.HelpIntent was kann ich dich fragen
 
+AMAZON.StopIntent tschüss
+AMAZON.StopIntent ciao
+AMAZON.StopIntent aufhören
+AMAZON.StopIntent auf wiedersehen
+
 StopIntent {stop}
 StopIntent von {stop}
 StopIntent vom {stop}
