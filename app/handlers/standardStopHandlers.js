@@ -21,7 +21,8 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTANDARDSTOP, {
         this.emit(':ask', this.t('STANDARD_STOP_ANSWER', apiStop.name));
     },
     'AMAZON.YesIntent': function () {
-        this.emit(':tell', util.random(this.t('STANDARD_STOP_YES')));
+        this.handler.state = States.MAIN;
+        this.emit(':tell', util.random(this.t('STANDARD_STOP_YES')) + ' ' + this.t('HOW_CAN_I_HELP_YOU'));
     },
     'AMAZON.NoIntent': function () {
         this.attributes.data.standardStop = {};
