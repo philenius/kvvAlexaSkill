@@ -45,7 +45,6 @@ module.exports = Alexa.CreateStateHandler(States.DIRECTDEPARTURE, {
 
         var apiRoute = util.getRouteByName(this.attributes.data.sessionRoute);
         if (apiRoute === undefined) {
-            this.handler.state = States.NONE;
             this.emit(':tell', this.t('DIRECT_DEPARTURE_HANDLER_UNKNOWN_ROUTE'));
             return;
         }
@@ -54,7 +53,6 @@ module.exports = Alexa.CreateStateHandler(States.DIRECTDEPARTURE, {
         util.getNextDeparturesFromStopForRoute(apiStop, apiRoute, function (data, error) {
             var relevantDepartures = filter.getRelevantDepartures(data);
             var card = outputBuilder.buildCardForBothDirections(apiStop, apiRoute, relevantDepartures);
-            that.handler.state = States.NONE;
             that.emit(':tellWithCard', outputBuilder.buildSpeechOutputForBothDirections(apiStop, apiRoute, relevantDepartures), card[0], card[1]);
         });
     },

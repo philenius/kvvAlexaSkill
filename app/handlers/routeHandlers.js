@@ -31,7 +31,6 @@ module.exports = Alexa.CreateStateHandler(States.SELECTROUTE, {
         util.getNextDeparturesFromStopForRoute(apiStop, apiRoute, function (data, error) {
             var relevantDepartures = filter.getRelevantDepartures(data);
             var card = outputBuilder.buildCardForBothDirections(apiStop, apiRoute, relevantDepartures);
-            that.handler.state = States.NONE;
             that.emit(':tellWithCard', outputBuilder.buildSpeechOutputForBothDirections(apiStop, apiRoute, relevantDepartures), card[0], card[1]);
         });
     },

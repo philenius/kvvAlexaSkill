@@ -24,7 +24,6 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTOP, {
 
         util.getAllDeparturesFromStop(apiStop, function (departures, error) {
             if (error != null) {
-                that.handler.state = States.NONE;
                 that.emit(':tell', that.t('UNHANDLED'));
                 return;
             }
@@ -32,7 +31,6 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTOP, {
             var departingRoutesCount = filter.getCountOfDifferentRoutesDeparting(departures);
             // If there's only one route departing from this stop, then don't ask the user for the route. Instead answer directly with the current departures.
             if (departingRoutesCount == 0) {
-                that.handler.state = States.NONE;
                 that.emit(':tell', that.t('STOP_HANDLER_ANSWER_NO_DEPARTURES', apiStop.name));
             } else if (departingRoutesCount == 1) {
                 var apiRoute = util.getRouteByName(departures[0].route);
@@ -45,7 +43,6 @@ module.exports = Alexa.CreateStateHandler(States.SELECTSTOP, {
                 util.getNextDeparturesFromStopForRoute(apiStop, apiRoute, function (data, error) {
                     var relevantDepartures = filter.getRelevantDepartures(data);
                     var card = outputBuilder.buildCardForBothDirections(apiStop, apiRoute, relevantDepartures);
-                    that.handler.state = States.NONE;
                     that.emit(':tellWithCard', outputBuilder.buildSpeechOutputForBothDirections(apiStop, apiRoute, relevantDepartures), card[0], card[1]);
                 });
             } else {
