@@ -10,20 +10,20 @@ module.exports = {
      */
     'buildSpeechOutputForBothDirections': function (stop, route, departures) {
         if (departures == null || departures.length == 0) {
-            return speechOutput = 'Leider fahren im Moment keine Bahnen der Linie {0} <break strength="medium"/> von der Haltestelle {1}.'.format(route.name, stop.name);
+            return 'Leider fahren im Moment keine Bahnen der Linie {0} <break strength="medium"/> von der Haltestelle {1}.'.format(route.name, stop.name);
         }
 
         var departuresDirection1 = filter.getDeparturesByDirection('1', departures);
         var departuresDirection2 = filter.getDeparturesByDirection('2', departures);
 
-        var speechOutput = '';
+        var speechOutput = '<audio src="https://s3.eu-central-1.amazonaws.com/kvv-alexa-skill/tramGong.mp3" /> ';
         if (departuresDirection1.length != 0) {
             var destination = departuresDirection1[0].destination;
 
             if (departuresDirection1.length == 1) {
-                speechOutput = buildSpeechOutputForOneDepartureInOneDirection(route, destination, departuresDirection1);
+                speechOutput += buildSpeechOutputForOneDepartureInOneDirection(route, destination, departuresDirection1);
             } else if (departuresDirection1.length == 2) {
-                speechOutput = buildSpeechOutputForTwoDeparturesInOneDirection(route, destination, departuresDirection1);
+                speechOutput += buildSpeechOutputForTwoDeparturesInOneDirection(route, destination, departuresDirection1);
             }
         }
         if (departuresDirection2.length != 0) {
