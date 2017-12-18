@@ -7,7 +7,7 @@ module.exports = [
     },
     {
         "id": "de:8212:401",
-        "names": ["Karl-Wilhelm-Platz"],
+        "names": ["Karlsruhe Karl-Wilhelm-Platz", "Karl-Wilhelm-Platz"],
         "lat": 49.01128824,
         "lon": 8.42325197
     },
@@ -37,13 +37,13 @@ module.exports = [
     },
     {
         "id": "de:8212:10",
-        "names": ["Untermühlstraße"],
+        "names": ["Karlsruhe Untermühlstraße", "Untermühlstraße"],
         "lat": 49.00208021,
         "lon": 8.45465601
     },
     {
         "id": "de:8212:51",
-        "names": ["Entenfang"],
+        "names": ["Karlsruhe Entenfang", "Entenfang"],
         "lat": 49.01056586,
         "lon": 8.35960165
     },
@@ -55,7 +55,7 @@ module.exports = [
     },
     {
         "id": "de:8212:7404",
-        "names": ["Landauer Straße"],
+        "names": ["Karlsruhe Landauer Straße", "Landauer Straße"],
         "lat": 49.03040772,
         "lon": 8.37038266
     },
@@ -91,7 +91,7 @@ module.exports = [
     },
     {
         "id": "de:8212:7009",
-        "names": ["Heidehof"],
+        "names": ["Karlsruhe Heidehof", "Heidehof"],
         "lat": 49.0313254,
         "lon": 8.38717784
     },
@@ -103,7 +103,7 @@ module.exports = [
     },
     {
         "id": "de:8212:7302",
-        "names": ["Linkenheimer Tor"],
+        "names": ["Karlsruhe Linkenheimer Tor", "Linkenheimer Tor"],
         "lat": 49.01437103,
         "lon": 8.39830872
     },
@@ -127,7 +127,7 @@ module.exports = [
     },
     {
         "id": "de:8212:311",
-        "names": ["Rintheimer Straße"],
+        "names": ["Karlsruhe Rintheimer Straße", "Rintheimer Straße"],
         "lat": 49.01176121,
         "lon": 8.43158506
     },
@@ -145,13 +145,13 @@ module.exports = [
     },
     {
         "id": "de:8212:3005",
-        "names": ["Rintheimer Querallee"],
+        "names": ["Karlsruhe Rintheimer Querallee", "Rintheimer Querallee"],
         "lat": 49.025229,
         "lon": 8.42387026
     },
     {
         "id": "de:8212:521",
-        "names": ["Kußmaulstraße"],
+        "names": ["Karlsruhe Kußmaulstraße", "Kußmaulstraße"],
         "lat": 49.01684147,
         "lon": 8.36924136
     },
@@ -187,7 +187,7 @@ module.exports = [
     },
     {
         "id": "de:8212:12",
-        "names": ["Duale Hochschule", "DHBW"],
+        "names": ["Karlsruhe Duale Hochschule", "Duale Hochschule", "DHBW"],
         "lat": 49.02693241,
         "lon": 8.38626094
     },
@@ -229,19 +229,19 @@ module.exports = [
     },
     {
         "id": "de:8212:6008",
-        "names": ["Sinner Durmersheimer Straße"],
+        "names": ["Karlsruhe Sinner Durmersheimer Sraße", "Sinner Durmersheimer Straße"],
         "lat": 49.00267286,
         "lon": 8.35512432
     },
     {
         "id": "de:8212:7304",
-        "names": ["Am Kanalweg"],
+        "names": ["Karlsruhe Am Kanalweg", "Am Kanalweg"],
         "lat": 49.03033559,
         "lon": 8.39557269
     },
     {
         "id": "de:8212:91",
-        "names": ["Ebertstraße"],
+        "names": ["Karlsruhe Ebertstraße", "Ebertstraße"],
         "lat": 48.99449236,
         "lon": 8.39540521
     },
@@ -277,13 +277,13 @@ module.exports = [
     },
     {
         "id": "de:8212:5515",
-        "names": ["Benzstraße"],
+        "names": ["Karlsruhe Benzstraße", "Benzstraße"],
         "lat": 49.00048596,
         "lon": 8.36615425
     },
     {
         "id": "de:8212:6207",
-        "names": ["TÜV"],
+        "names": ["Karlsruhe TÜV", "TÜV"],
         "lat": 48.99645696,
         "lon": 8.34830343
     },
@@ -313,7 +313,7 @@ module.exports = [
     },
     {
         "id": "de:8212:45",
-        "names": ["Philippstraße"],
+        "names": ["Karlsruhe Philippstraße", "Philippstraße"],
         "lat": 49.01136626,
         "lon": 8.3644988
     },
@@ -337,19 +337,19 @@ module.exports = [
     },
     {
         "id": "de:8212:6209",
-        "names": ["Bernsteinstraße"],
+        "names": ["Karlsruhe Bernsteinstraße", "Bernsteinstraße"],
         "lat": 48.99203248,
         "lon": 8.34823817
     },
     {
         "id": "de:8212:7402",
-        "names": ["Stresemannstraße"],
+        "names": ["Karlsruhe Stresemannstraße", "Stresemannstraße"],
         "lat": 49.02642,
         "lon": 8.37456247
     },
     {
         "id": "de:8212:1106",
-        "names": ["Haus Bethlehem"],
+        "names": ["Karlsruhe Haus Bethlehem", "Haus Bethlehem"],
         "lat": 49.03385898,
         "lon": 8.37669838
     },
@@ -373,7 +373,7 @@ module.exports = [
     },
     {
         "id": "de:8212:5205",
-        "names": ["Belchenplatz"],
+        "names": ["Karlsruhe Belchenplatz", "Belchenplatz"],
         "lat": 48.98227282,
         "lon": 8.39041623
     },
@@ -385,13 +385,13 @@ module.exports = [
     },
     {
         "id": "de:8212:90",
-        "names": ["Hauptbahnhof"],
+        "names": ["Karlsruhe Hauptbahnhof", "Hauptbahnhof"],
         "lat": 48.993317,
         "lon": 8.40107663
     },
     {
         "id": "de:8212:98",
-        "names": ["Poststraße"],
+        "names": ["Karlsruhe Poststraße", "Poststraße"],
         "lat": 48.99520111,
         "lon": 8.40373243
     },
@@ -415,19 +415,19 @@ module.exports = [
     },
     {
         "id": "de:8212:5004",
-        "names": ["Gebhardstraße"],
+        "names": ["Karlsruhe Gebhardstraße", "Gebhardstraße"],
         "lat": 48.99283258,
         "lon": 8.38928989
     },
     {
         "id": "de:8212:7412",
-        "names": ["Binger Straße"],
+        "names": ["Karlsruhe Binger Straße", "Binger Straße"],
         "lat": 49.03114778,
         "lon": 8.36106058
     },
     {
         "id": "de:8212:71",
-        "names": ["Ettlinger Tor"],
+        "names": ["Karlsruhe Ettlinger Tor", "Ettlinger Tor"],
         "lat": 49.00501929,
         "lon": 8.40350587
     },
@@ -439,7 +439,7 @@ module.exports = [
     },
     {
         "id": "de:8212:607",
-        "names": ["Hardecksiedlung"],
+        "names": ["Karlsruhe Hardecksiedlung", "Hardecksiedlung"],
         "lat": 48.99254192,
         "lon": 8.368701
     },
@@ -457,7 +457,7 @@ module.exports = [
     },
     {
         "id": "de:8212:5003",
-        "names": ["Barbarossaplatz"],
+        "names": ["Karlsruhe Barbarossaplatz", "Barbarossaplatz"],
         "lat": 48.9949189,
         "lon": 8.38931904
     },
@@ -487,31 +487,31 @@ module.exports = [
     },
     {
         "id": "de:8212:5203",
-        "names": ["Neckarplatz"],
+        "names": ["Karlsruhe Neckarplatz", "Neckarplatz"],
         "lat": 48.98766242,
         "lon": 8.39446311
     },
     {
         "id": "de:8212:7018",
-        "names": ["Madenburgweg"],
+        "names": ["Karlsruhe Madenburgweg", "Madenburgweg"],
         "lat": 49.02689239,
         "lon": 8.3655591
     },
     {
         "id": "de:8212:73",
-        "names": ["Kongresszentrum"],
+        "names": ["Karlsruhe Konkresszentrum", "Kongresszentrum"],
         "lat": 49.00265296,
         "lon": 8.40323345
     },
     {
         "id": "de:8212:522",
-        "names": ["Hertzstraße"],
+        "names": ["Karlsruhe Hertzstraße", "Hertzstraße"],
         "lat": 49.0197471,
         "lon": 8.3645425
     },
     {
         "id": "de:8212:605",
-        "names": ["Europahalle", "Europabad"],
+        "names": ["Karlsruhe Europahalle", "Karlsruhe Europabad", "Europahalle", "Europabad"],
         "lat": 48.99783426,
         "lon": 8.3762324
     },
@@ -523,13 +523,13 @@ module.exports = [
     },
     {
         "id": "de:8212:6006",
-        "names": ["Birkenweg"],
+        "names": ["Karlsruhe Birkenweg", "Birkenweg"],
         "lat": 48.99883765,
         "lon": 8.36238962
     },
     {
         "id": "de:8212:3002",
-        "names": ["Studentenhaus"],
+        "names": ["Karlsruhe Studentenhaus", "Studentenhaus"],
         "lat": 49.01125399,
         "lon": 8.41822194
     },
@@ -547,31 +547,31 @@ module.exports = [
     },
     {
         "id": "de:8212:5",
-        "names": ["Synagoge"],
+        "names": ["Karlsruhe Synagoge", "Synagoge"],
         "lat": 49.0177632,
         "lon": 8.3850749
     },
     {
         "id": "de:8212:8",
-        "names": ["Lilienthalstraße"],
+        "names": ["Karlsruhe Lilienthalstraße", "Lilienthalstraße"],
         "lat": 49.02234124,
         "lon": 8.38527828
     },
     {
         "id": "de:8212:49",
-        "names": ["Mühlburger Tor Kaiserallee"],
+        "names": ["Karlsruhe Mühlburger Tor Kaiserallee", "Mühlburger Tor Kaiserallee"],
         "lat": 49.010596,
         "lon": 8.383066
     },
     {
         "id": "de:8212:59",
-        "names": ["Europaplatz Sparkasse"],
+        "names": ["Karlsruhe Europaplatz Sparkasse", "Europaplatz Sparkasse"],
         "lat": 49.01000137,
         "lon": 8.39324906
     },
     {
         "id": "de:8212:503",
-        "names": ["Mühlburger Feld"],
+        "names": ["Karlsruhe Mühlburger Feld", "Mühlburger Feld"],
         "lat": 49.00789868,
         "lon": 8.36347677
     },
@@ -583,7 +583,7 @@ module.exports = [
     },
     {
         "id": "de:8212:6002",
-        "names": ["Blohnstraße"],
+        "names": ["Karlsruhe Blohnstraße", "Blohnstraße"],
         "lat": 49.00736266,
         "lon": 8.35600689
     },
@@ -601,13 +601,13 @@ module.exports = [
     },
     {
         "id": "de:8212:65",
-        "names": ["ZKM"],
+        "names": ["Karlsruhe ZKM", "ZKM"],
         "lat": 48.99965887,
         "lon": 8.38614514
     },
     {
         "id": "de:8212:203",
-        "names": ["Rheinhafenstraße"],
+        "names": ["Karlsruhe Rheinhafenstraße", "Rheinhafenstraße"],
         "lat": 49.00162738,
         "lon": 8.34511989
     },
@@ -619,7 +619,7 @@ module.exports = [
     },
     {
         "id": "de:8212:1201",
-        "names": ["Albtalbahnhof"],
+        "names": ["Karlsruhe Albtalbahnhof", "Albtalbahnhof"],
         "lat": 48.99365987,
         "lon": 8.39612585
     },
@@ -643,7 +643,7 @@ module.exports = [
     },
     {
         "id": "de:8212:7003",
-        "names": ["Kunstakademie", "Hochschule"],
+        "names": ["Karlsruhe Kunstakademie", "Karlsruhe Hochschule", "Kunstakademie", "Hochschule"],
         "lat": 49.01440389,
         "lon": 8.38577247
     },
@@ -655,7 +655,7 @@ module.exports = [
     },
     {
         "id": "de:8212:316",
-        "names": ["Pfannkuchstraße"],
+        "names": ["Karlsruhe Pfannkuchstraße", "Pfannkuchstraße"],
         "lat": 49.01125569,
         "lon": 8.34790524
     },
@@ -667,7 +667,7 @@ module.exports = [
     },
     {
         "id": "de:8212:510",
-        "names": ["Konzerthaus"],
+        "names": ["Karlsruhe Konzerthaus", "Konzerthaus"],
         "lat": 49.00336242,
         "lon": 8.39958943
     },
@@ -691,19 +691,19 @@ module.exports = [
     },
     {
         "id": "de:8212:5008",
-        "names": ["Landgrabenstraße"],
+        "names": ["Karlsruhe Landgrabenstraße", "Landgrabenstraße"],
         "lat": 48.98885391,
         "lon": 8.37674075
     },
     {
         "id": "de:8212:6215",
-        "names": ["Windeckstraße"],
+        "names": ["Karlsruhe Windeckstraße", "Windeckstraße"],
         "lat": 48.99100956,
         "lon": 8.37131654
     },
     {
         "id": "de:8212:7",
-        "names": ["Tullastraße", "VBK"],
+        "names": ["Karlsruhe Tullastraße", "Karlsruhe VBK", "Tullastraße", "VBK"],
         "lat": 49.00625912,
         "lon": 8.43179805
     },
@@ -715,13 +715,13 @@ module.exports = [
     },
     {
         "id": "de:8212:72",
-        "names": ["Volkswohnung"],
+        "names": ["Karlsruhe Volkswohnung", "Volkswohnung"],
         "lat": 49.00381654,
         "lon": 8.40393026
     },
     {
         "id": "de:8212:501",
-        "names": ["Rheinhafen"],
+        "names": ["Karlsruhe Rheinhafen", "Rheinhafen"],
         "lat": 49.01559506,
         "lon": 8.34723337
     },
@@ -739,19 +739,19 @@ module.exports = [
     },
     {
         "id": "de:8212:5206",
-        "names": ["Enzstraße"],
+        "names": ["Karlsruhe Enzstraße", "Enzstraße"],
         "lat": 48.98395701,
         "lon": 8.39605183
     },
     {
         "id": "de:8212:5509",
-        "names": ["Holtzstraße"],
+        "names": ["Karlsruhe Holtzstraße", "Holtzstraße"],
         "lat": 49.00243801,
         "lon": 8.38120444
     },
     {
         "id": "de:8212:6206",
-        "names": ["Sankt Josefs-Kirche"],
+        "names": ["Karlsruhe Sankt Josefs-Kirche", "Sankt Josefs-Kirche"],
         "lat": 48.99916472,
         "lon": 8.35009939
     },
@@ -781,13 +781,13 @@ module.exports = [
     },
     {
         "id": "de:8212:7019",
-        "names": ["Barbaraweg"],
+        "names": ["Karlsruhe Barbaraweg", "Barbaraweg"],
         "lat": 49.02343324,
         "lon": 8.36606796
     },
     {
         "id": "de:8212:504",
-        "names": ["Kühler Krug"],
+        "names": ["Karlsruhe Kühler Krug", "Kühler Krug"],
         "lat": 49.0056807,
         "lon": 8.36730478
     },
@@ -805,7 +805,7 @@ module.exports = [
     },
     {
         "id": "de:8212:6010",
-        "names": ["Edelbergstraße"],
+        "names": ["Karlsruhe Edelbergstraße", "Edelbergstraße"],
         "lat": 48.99684029,
         "lon": 8.35410636
     },
@@ -823,13 +823,13 @@ module.exports = [
     },
     {
         "id": "de:8212:26",
-        "names": ["Rheinhafen Nord"],
+        "names": ["Karlsruhe Rheinhafen Nord", "Rheinhafen Nord"],
         "lat": 49.01790369,
         "lon": 8.33112552
     },
     {
         "id": "de:8212:1104",
-        "names": ["August-Bebel-Straße"],
+        "names": ["Karlsruhe August-Bebel-Straße", "August-Bebel-Straße"],
         "lat": 49.02426857,
         "lon": 8.37579267
     },
@@ -841,19 +841,19 @@ module.exports = [
     },
     {
         "id": "de:8212:6",
-        "names": ["Gottesauer Platz", "BGV"],
+        "names": ["Karlsruhe Gottesauer Platz", "Karlsruhe BGV", "Gottesauer Platz", "BGV"],
         "lat": 49.00772929,
         "lon": 8.42363479
     },
     {
         "id": "de:8212:102",
-        "names": ["Vogesenbrücke"],
+        "names": ["Karlsruhe Vogesenbrücke", "Vogesenbrücke"],
         "lat": 49.00905968,
         "lon": 8.35556126
     },
     {
         "id": "de:8212:103",
-        "names": ["Mühlburg West"],
+        "names": ["Karlsruhe Mühlburg West", "Mühlburg West"],
         "lat": 49.02037979,
         "lon": 8.35058884
     },
@@ -865,13 +865,13 @@ module.exports = [
     },
     {
         "id": "de:8212:6213",
-        "names": ["Schwimmschulweg"],
+        "names": ["Karlsruhe Schwimmschulweg", "Schwimmschulweg"],
         "lat": 48.99476472,
         "lon": 8.36410875
     },
     {
         "id": "de:8212:60",
-        "names": ["Europaplatz Karlstraße"],
+        "names": ["Karlsruhe Europaplatz Karlstraße", "Europaplatz Karlstraße"],
         "lat": 49.00827448,
         "lon": 8.39488296
     },
@@ -883,19 +883,19 @@ module.exports = [
     },
     {
         "id": "de:8212:6012",
-        "names": ["Andreas-Hofer-Straße"],
+        "names": ["Karlsruhe Andreas-Hofer-Straße", "Andreas-Hofer-Straße"],
         "lat": 49.00277408,
         "lon": 8.36038493
     },
     {
         "id": "de:8212:7305",
-        "names": ["Weißes Haus"],
+        "names": ["Karlsruhe Weißes Haus", "Weißes Haus"],
         "lat": 49.03294967,
         "lon": 8.39507606
     },
     {
         "id": "de:8212:64",
-        "names": ["Arbeitsagentur"],
+        "names": ["Karlsruhe Arbeitsagentur", "Arbeitsagentur"],
         "lat": 49.00359063,
         "lon": 8.38656151
     },
@@ -919,7 +919,7 @@ module.exports = [
     },
     {
         "id": "de:8212:31",
-        "names": ["Europaplatz Kaiserstraße"],
+        "names": ["Karlsruhe Europaplatz Kaiserstraße", "Europaplatz Kaiserstraße"],
         "lat": 49.00994599,
         "lon": 8.39640733
     },
@@ -931,7 +931,7 @@ module.exports = [
     },
     {
         "id": "de:8212:505",
-        "names": ["Hübschstraße"],
+        "names": ["Karlsruhe Hübschstraße", "Hübschstraße"],
         "lat": 49.00551839,
         "lon": 8.37215901
     },
@@ -955,25 +955,25 @@ module.exports = [
     },
     {
         "id": "de:8212:5508",
-        "names": ["Sankt Vincentius Krankenhaus"],
+        "names": ["Karlsruhe Sankt Vincentius Krankenhaus", "Sankt Vincentius Krankenhaus"],
         "lat": 48.99965788,
         "lon": 8.38091089
     },
     {
         "id": "de:8212:6217",
-        "names": ["Beiertheim West"],
+        "names": ["Karlsruhe Beiertheim West", "Beiertheim West"],
         "lat": 48.994884,
         "lon": 8.38276019
     },
     {
         "id": "de:8212:7015",
-        "names": ["Weißenburger Straße"],
+        "names": ["Karlsruhe Weißenburger Straße", "Weißenburger Straße"],
         "lat": 49.0370539,
         "lon": 8.3672899
     },
     {
         "id": "de:8212:7021",
-        "names": ["Kärcherstraße"],
+        "names": ["Karlsruhe Kärcherstraße", "Kärcherstraße"],
         "lat": 49.01635252,
         "lon": 8.36208391
     },
@@ -985,19 +985,19 @@ module.exports = [
     },
     {
         "id": "de:8212:524",
-        "names": ["Neureuter Straße"],
+        "names": ["Karlsruhe Neureuter Straße", "Neureuter Straße"],
         "lat": 49.02343292,
         "lon": 8.35787784
     },
     {
         "id": "de:8212:990",
-        "names": ["Betriebshof West"],
+        "names": ["Karlsruhe Betriebshof West", "Betriebshof West"],
         "lat": 49.02310461,
         "lon": 8.33484321
     },
     {
         "id": "de:8212:1103",
-        "names": ["Knielinger Allee"],
+        "names": ["Karlsruhe Knielinger Allee", "Knielinger Allee"],
         "lat": 49.01920439,
         "lon": 8.37548687
     },
@@ -1021,25 +1021,25 @@ module.exports = [
     },
     {
         "id": "de:8212:6218",
-        "names": ["Welfenstraße"],
+        "names": ["Karlsruhe Welfenstraße", "Welfenstraße"],
         "lat": 48.99528282,
         "lon": 8.38503736
     },
     {
         "id": "de:8212:62",
-        "names": ["Mathystraße"],
+        "names": ["Karlsruhe Mathystraße", "Mathystraße"],
         "lat": 49.00231931,
         "lon": 8.3944221
     },
     {
         "id": "de:8212:402",
-        "names": ["Hauptfriedhof"],
+        "names": ["Karlsruhe Hauptfriedhof", "Hauptfriedhof"],
         "lat": 49.01362951,
         "lon": 8.42934921
     },
     {
         "id": "de:8212:403",
-        "names": ["Hirtenweg", "Technologiepark"],
+        "names": ["Karlsruhe Hirtenweg", "Karlsruhe Technologiepark", "Hirtenweg", "Technologiepark"],
         "lat": 49.01771743,
         "lon": 8.43965173
     },
@@ -1081,13 +1081,13 @@ module.exports = [
     },
     {
         "id": "de:8212:5504",
-        "names": ["Südendschule"],
+        "names": ["Karlsruhe Südendschule", "Südendschule"],
         "lat": 48.99855655,
         "lon": 8.3885366
     },
     {
         "id": "de:8212:6011",
-        "names": ["Staufenbergweg"],
+        "names": ["Karlsruhe Staufenbergweg", "Staufenbergweg"],
         "lat": 48.99099136,
         "lon": 8.34699465
     },
@@ -1099,7 +1099,7 @@ module.exports = [
     },
     {
         "id": "de:8212:602",
-        "names": ["Sophienstraße"],
+        "names": ["Karlsruhe Sophienstraße", "Sophienstraße"],
         "lat": 49.00751661,
         "lon": 8.37917323
     },
@@ -1123,7 +1123,7 @@ module.exports = [
     },
     {
         "id": "de:8212:1101",
-        "names": ["Sankt Klinikum Moltkestraße"],
+        "names": ["Karlsruhe Sankt Klinikum Moltkestraße", "Sankt Klinikum Moltkestraße"],
         "lat": 49.01514539,
         "lon": 8.37482677
     },
@@ -1141,7 +1141,7 @@ module.exports = [
     },
     {
         "id": "de:8212:6216",
-        "names": ["Bulach West"],
+        "names": ["Karlsruhe Bulach West", "Bulach West"],
         "lat": 48.98924237,
         "lon": 8.37541053
     },
@@ -1153,7 +1153,7 @@ module.exports = [
     },
     {
         "id": "de:8212:88",
-        "names": ["Hauptbahnhof Süd"],
+        "names": ["Karlsruhe Hauptbahnhof Süd", "Hauptbahnhof Süd"],
         "lat": 48.99168012,
         "lon": 8.40101427
     },
@@ -1171,7 +1171,7 @@ module.exports = [
     },
     {
         "id": "de:8212:3003",
-        "names": ["Pastor-Felke-Straße"],
+        "names": ["Karlsruhe Pastor-Felke-Straße", "Pastor-Felke-Straße"],
         "lat": 49.01528523,
         "lon": 8.4223582
     },
@@ -1195,7 +1195,7 @@ module.exports = [
     },
     {
         "id": "de:8212:6007",
-        "names": ["Hornisgrindestraße"],
+        "names": ["Karlsruhe Hornisgrindestraße", "Hornisgrindestraße"],
         "lat": 48.99584121,
         "lon": 8.36039171
     },
@@ -1207,7 +1207,7 @@ module.exports = [
     },
     {
         "id": "de:8212:36",
-        "names": ["Kaiserplatz"],
+        "names": ["Karlsruhe Kaiserplatz", "Kaiserplatz"],
         "lat": 49.01031721,
         "lon": 8.38835158
     },
@@ -1243,9 +1243,15 @@ module.exports = [
     },
     {
         "id": "de:8212:41",
-        "names": ["Yorckstraße"],
+        "names": ["Karlsruhe Yorckstraße", "Yorckstraße"],
         "lat": 49.01089621,
         "lon": 8.37557712
+    },
+    {
+        "id": "de:8212:6005",
+        "names": ["Karlsruhe Westbahnhof", "Karlsruhe West", "Westbahnhof", "West"],
+        "lat": 49.00236735,
+        "lon": 8.36326026
     },
     {
         "id": "de:8212:4603",
@@ -1261,7 +1267,7 @@ module.exports = [
     },
     {
         "id": "de:8212:604",
-        "names": ["Landesbausparkasse"],
+        "names": ["Karlsruhe Landesbausparkasse", "Landesbausparkasse"],
         "lat": 49.00170776,
         "lon": 8.37750972
     },
@@ -1291,7 +1297,7 @@ module.exports = [
     },
     {
         "id": "de:8212:7014",
-        "names": ["Schweigener Straße"],
+        "names": ["Karlsruhe Schweigener Straße", "Schweigener Straße"],
         "lat": 49.03867877,
         "lon": 8.37008679
     },
@@ -1303,7 +1309,7 @@ module.exports = [
     },
     {
         "id": "de:8212:1211",
-        "names": ["Erlenweg"],
+        "names": ["Karlsruhe Erlenweg", "Erlenweg"],
         "lat": 48.98274602,
         "lon": 8.40877198
     },
@@ -1351,7 +1357,7 @@ module.exports = [
     },
     {
         "id": "de:8212:3004",
-        "names": ["Büchiger Allee"],
+        "names": ["Karlsruhe Büchiger Allee", "Büchiger Allee"],
         "lat": 49.01974922,
         "lon": 8.42134951
     },
@@ -1369,13 +1375,13 @@ module.exports = [
     },
     {
         "id": "de:8212:5007",
-        "names": ["Grünwinkler Straße"],
+        "names": ["Karlsruhe Grünwinkler Straße", "Grünwinkler Straße"],
         "lat": 48.9878486,
         "lon": 8.38041504
     },
     {
         "id": "de:8212:7017",
-        "names": ["Berliner Straße"],
+        "names": ["Karlsruhe Berliner Straße", "Berliner Straße"],
         "lat": 49.03075553,
         "lon": 8.36493563
     },
@@ -1393,13 +1399,13 @@ module.exports = [
     },
     {
         "id": "de:8212:44",
-        "names": ["Händelstraße"],
+        "names": ["Karlsruhe Händelstraße", "Händelstraße"],
         "lat": 49.01119417,
         "lon": 8.36918968
     },
     {
         "id": "de:8212:80",
-        "names": ["Kronenplatz Erler-Straße"],
+        "names": ["Karlsruhe Kronenplatz Erler-Straße", "Kronenplatz Erler-Straße"],
         "lat": 49.00892899,
         "lon": 8.41014331
     },
@@ -1423,7 +1429,7 @@ module.exports = [
     },
     {
         "id": "de:8212:5513",
-        "names": ["Griesbachstraße"],
+        "names": ["Karlsruhe Griesbachstraße", "Griesbachstraße"],
         "lat": 49.00020415,
         "lon": 8.36887749
     },
@@ -1435,7 +1441,7 @@ module.exports = [
     },
     {
         "id": "de:8212:1206",
-        "names": ["Dammerstock"],
+        "names": ["Karlsruhe Dammerstock", "Dammerstock"],
         "lat": 48.98457191,
         "lon": 8.403627
     },
@@ -1465,13 +1471,13 @@ module.exports = [
     },
     {
         "id": "de:8212:63",
-        "names": ["Kolpingplatz"],
+        "names": ["Karlsruhe Kolpingplatz", "Kolpingplatz"],
         "lat": 48.99746937,
         "lon": 8.39381127
     },
     {
         "id": "de:8212:201",
-        "names": ["Eckenerstraße"],
+        "names": ["Karlsruhe Eckenerstraße", "Eckenerstraße"],
         "lat": 49.00562917,
         "lon": 8.34994693
     },
@@ -1495,7 +1501,7 @@ module.exports = [
     },
     {
         "id": "de:8212:5207",
-        "names": ["Nürnberger Straße"],
+        "names": ["Karlsruhe Nürnberger Straße", "Nürnberger Straße"],
         "lat": 48.98441393,
         "lon": 8.39917498
     },
@@ -1513,7 +1519,7 @@ module.exports = [
     },
     {
         "id": "de:8212:7406",
-        "names": ["Trierer Straße"],
+        "names": ["Karlsruhe Trierer Straße", "Trierer Straße"],
         "lat": 49.03521243,
         "lon": 8.3725786
     },
@@ -1537,7 +1543,7 @@ module.exports = [
     },
     {
         "id": "de:8212:315",
-        "names": ["Stadtwerke"],
+        "names": ["Karlsruhe Stadtwerke", "Stadtwerke"],
         "lat": 49.0071043,
         "lon": 8.34366754
     },
@@ -1549,7 +1555,7 @@ module.exports = [
     },
     {
         "id": "de:8212:3014",
-        "names": ["Emil-Gött-Straße"],
+        "names": ["Karlsruhe Emil-Gött-Straße", "Emil-Gött-Straße"],
         "lat": 49.01337032,
         "lon": 8.42064424
     },
@@ -1561,7 +1567,7 @@ module.exports = [
     },
     {
         "id": "de:8212:83",
-        "names": ["Werderstraße"],
+        "names": ["Karlsruhe Werderstraße", "Werderstraße"],
         "lat": 49.0011891,
         "lon": 8.41059006
     },
@@ -1573,7 +1579,7 @@ module.exports = [
     },
     {
         "id": "de:8212:622",
-        "names": ["Ostendstraße"],
+        "names": ["Karlsruhe Ostendstraße", "Ostendstraße"],
         "lat": 49.00496035,
         "lon": 8.41660044
     },
@@ -1603,7 +1609,7 @@ module.exports = [
     },
     {
         "id": "de:8212:5015",
-        "names": ["Petergraben"],
+        "names": ["Karlsruhe Petergraben", "Petergraben"],
         "lat": 48.98579142,
         "lon": 8.37744842
     },
@@ -1615,7 +1621,7 @@ module.exports = [
     },
     {
         "id": "de:8212:7405",
-        "names": ["Frankenthaler Straße"],
+        "names": ["Karlsruhe Frankenthaler Straße", "Frankenthaler Straße"],
         "lat": 49.03398809,
         "lon": 8.3706657
     },
@@ -1627,19 +1633,19 @@ module.exports = [
     },
     {
         "id": "de:8212:40",
-        "names": ["Schillerstraße"],
+        "names": ["Karlsruhe Schillerstraße", "Schillerstraße"],
         "lat": 49.01025377,
         "lon": 8.37983634
     },
     {
         "id": "de:8212:2",
-        "names": ["Kronenplatz Kaiserstraße"],
+        "names": ["Karlsruhe Kronenplatz Kaiserstraße", "Kronenplatz Kaiserstraße"],
         "lat": 49.0093644,
         "lon": 8.40912665
     },
     {
         "id": "de:8212:523",
-        "names": ["Feierabendweg"],
+        "names": ["Karlsruhe Feierabendweg", "Feierabendweg"],
         "lat": 49.02175938,
         "lon": 8.36093467
     },
@@ -1669,7 +1675,7 @@ module.exports = [
     },
     {
         "id": "de:8212:5516",
-        "names": ["Liststraße"],
+        "names": ["Karlsruhe Liststraße", "Liststraße"],
         "lat": 49.00455891,
         "lon": 8.36443509
     },
@@ -1705,19 +1711,19 @@ module.exports = [
     },
     {
         "id": "de:8212:85",
-        "names": ["Rüppurrer Tor"],
+        "names": ["Karlsruhe Rüppurrer Tor", "Rüppurrer Tor"],
         "lat": 49.00646594,
         "lon": 8.41029542
     },
     {
         "id": "de:8212:84",
-        "names": ["Tivoli"],
+        "names": ["Karlsruhe Tivoli", "Tivoli"],
         "lat": 48.99655965,
         "lon": 8.410877
     },
     {
         "id": "de:8212:321",
-        "names": ["Mühlburger Tor Grashofstraße"],
+        "names": ["Karlsruhe Mühlburger Tor Grashofstraße", "Mühlburger Tor Grashofstraße"],
         "lat": 49.010814,
         "lon": 8.384552
     },
@@ -1729,7 +1735,7 @@ module.exports = [
     },
     {
         "id": "de:8212:6208",
-        "names": ["Eichelbergstraße"],
+        "names": ["Karlsruhe Eichelbergstraße", "Eichelbergstraße"],
         "lat": 48.99337379,
         "lon": 8.34532374
     },
@@ -1741,13 +1747,13 @@ module.exports = [
     },
     {
         "id": "de:8212:624",
-        "names": ["Schloss Gottesaue", "HfM", "Hochschule für Musik"],
+        "names": ["Karlsruhe Schloss Gottesaue", "Karlsruhe HfM", "Karlsruhe Hochschule für Musik", "Schloss Gottesaue", "HfM", "Hochschule für Musik"],
         "lat": 49.00367429,
         "lon": 8.42733083
     },
     {
         "id": "de:8212:1207",
-        "names": ["Schloss Rüppurr"],
+        "names": ["Karlsruhe Schloss Rüppurr", "Schloss Rüppurr"],
         "lat": 48.98102159,
         "lon": 8.40392893
     },
@@ -1765,25 +1771,25 @@ module.exports = [
     },
     {
         "id": "de:8212:6009",
-        "names": ["Wattkopfstraße"],
+        "names": ["Karlsruhe Wattkopfstraße", "Wattkopfstraße"],
         "lat": 48.99389989,
         "lon": 8.35090579
     },
     {
         "id": "de:8212:7016",
-        "names": ["Germersheimer Straße"],
+        "names": ["Karlsruhe Germersheimer Straße", "Germersheimer Straße"],
         "lat": 49.03311076,
         "lon": 8.36480992
     },
     {
         "id": "de:8212:1",
-        "names": ["Marktplatz"],
+        "names": ["Karlsruhe Marktplatz", "Marktplatz"],
         "lat": 49.00949583,
         "lon": 8.404956
     },
     {
         "id": "de:8212:3",
-        "names": ["Durlacher Tor"],
+        "names": ["Karlsruhe Durlacher Tor", "Durlacher Tor"],
         "lat": 49.009255,
         "lon": 8.413622
     },
@@ -1795,7 +1801,7 @@ module.exports = [
     },
     {
         "id": "de:8212:603",
-        "names": ["Weinbrennerplatz"],
+        "names": ["Karlsruhe Weinbrenner Platz", "Weinbrennerplatz"],
         "lat": 49.00561279,
         "lon": 8.37796677
     },
@@ -1819,13 +1825,13 @@ module.exports = [
     },
     {
         "id": "de:8212:9",
-        "names": ["Weinweg"],
+        "names": ["Karlsruhe Weinweg", "Weinweg"],
         "lat": 49.00432947,
         "lon": 8.44175644
     },
     {
         "id": "de:8212:89",
-        "names": ["Hauptbahnhof Vorplatz"],
+        "names": ["Karlsruhe Hauptbahnhof Vorplatz", "Hauptbahnhof Vorplatz"],
         "lat": 48.99449035,
         "lon": 8.400188
     },
@@ -1837,13 +1843,13 @@ module.exports = [
     },
     {
         "id": "de:8212:7303",
-        "names": ["Schützenhaus"],
+        "names": ["Karlsruhe Schützenhaus", "Schützenhaus"],
         "lat": 49.02382272,
         "lon": 8.39678644
     },
     {
         "id": "de:8212:74",
-        "names": ["Augartenstraße"],
+        "names": ["Karlsruhe Augartenstraße", "Augartenstraße"],
         "lat": 48.99963174,
         "lon": 8.40325588
     },
@@ -1855,13 +1861,13 @@ module.exports = [
     },
     {
         "id": "de:8212:508",
-        "names": ["Otto-Sachs-Straße"],
+        "names": ["Karlsruhe Otto-Sachs-Straße", "Otto-Sachs-Straße"],
         "lat": 49.00345241,
         "lon": 8.38932404
     },
     {
         "id": "de:8212:3102",
-        "names": ["Karlsruhe-Hagsfeld"],
+        "names": ["Karlsruhe Hagsfeld", "Karlsruhe Hagsfeld Bahnhof", "Hagsfeld", "Hagsfeld Bahnhof"],
         "lat": 49.02772238,
         "lon": 8.45399295
     },
@@ -1873,13 +1879,13 @@ module.exports = [
     },
     {
         "id": "de:8212:5016",
-        "names": ["Bulach Friedhof"],
+        "names": ["Karlsruhe Bulach Friedhof", "Bulach Friedhof"],
         "lat": 48.98321251,
         "lon": 8.37446125
     },
     {
         "id": "de:8212:5204",
-        "names": ["Weiherhof"],
+        "names": ["Karlsruhe Weiherhof", "Weiherhof"],
         "lat": 48.98622659,
         "lon": 8.39330551
     },
@@ -1909,13 +1915,13 @@ module.exports = [
     },
     {
         "id": "de:8212:5202",
-        "names": ["Stephanienbad"],
+        "names": ["Karlsruhe Stephaniebad", "Stephanienbad"],
         "lat": 48.99091276,
         "lon": 8.39184121
     },
     {
         "id": "de:8212:6205",
-        "names": ["Durmersheimer Straße"],
+        "names": ["Karlsruhe Durmersheimer Straße", "Durmersheimer Straße"],
         "lat": 49.00018168,
         "lon": 8.35025016
     },
@@ -1933,7 +1939,7 @@ module.exports = [
     },
     {
         "id": "de:8212:99",
-        "names": ["Herrenstraße"],
+        "names": ["Karlsruhe Herrenstraße", "Herrenstraße"],
         "lat": 49.00974138,
         "lon": 8.4002782
     },
@@ -1957,13 +1963,13 @@ module.exports = [
     },
     {
         "id": "de:8212:1105",
-        "names": ["Kurt-Schumacher-Straße"],
+        "names": ["Karlsruhe Kurt-Schumacher-Straße", "Kurt-Schumacher-Straße"],
         "lat": 49.03026034,
         "lon": 8.37636044
     },
     {
         "id": "de:8212:1700",
-        "names": ["Maxau"],
+        "names": ["Karlsruhe Maxau", "Maxau"],
         "lat": 49.035948,
         "lon": 8.307243
     },
@@ -1975,31 +1981,31 @@ module.exports = [
     },
     {
         "id": "de:8212:6004",
-        "names": ["Sinner Zeppelinstraße"],
+        "names": ["Karlsruhe Sinner Zeppelinstraße", "Sinner Zeppelinstraße"],
         "lat": 49.0030214,
         "lon": 8.35634988
     },
     {
         "id": "de:8212:7403",
-        "names": ["Wilhelm-Kolb-Straße"],
+        "names": ["Karlsruhe Wilhelm-Kolb-Straße", "Wilhelm-Kolb-Straße"],
         "lat": 49.02781107,
         "lon": 8.37406644
     },
     {
         "id": "de:8212:29",
-        "names": ["Kapellenstraße"],
+        "names": ["Karlsruhe Kapellenstraße", "Kapellenstraße"],
         "lat": 49.00653425,
         "lon": 8.41311029
     },
     {
         "id": "de:8212:58",
-        "names": ["Lameyplatz"],
+        "names": ["Karlsruhe Lameyplatz", "Lameyplatz"],
         "lat": 49.01319976,
         "lon": 8.35461926
     },
     {
         "id": "de:8212:61",
-        "names": ["Karlstor"],
+        "names": ["Karlsruhe Karlstor", "Karlstor"],
         "lat": 49.00580067,
         "lon": 8.39469425
     },
@@ -2029,7 +2035,7 @@ module.exports = [
     },
     {
         "id": "de:8212:606",
-        "names": ["Bannwaldallee"],
+        "names": ["Karlsruhe Bannwaldallee", "Bannwaldallee"],
         "lat": 48.99530742,
         "lon": 8.37290229
     },
@@ -2053,7 +2059,7 @@ module.exports = [
     },
     {
         "id": "de:8212:24",
-        "names": ["Schlossgartenbahn"],
+        "names": ["Karlsruhe Schlossgartenbahn", "Schlossgartenbahn"],
         "lat": 49.01427565,
         "lon": 8.40071587
     },
@@ -2083,13 +2089,13 @@ module.exports = [
     },
     {
         "id": "de:8212:5514",
-        "names": ["Junker-und-Ruh-Straße"],
+        "names": ["Karlsruhe Junker-und-Ruh-Straße", "Junker-und-Ruh-Straße"],
         "lat": 48.99928649,
         "lon": 8.36879342
     },
     {
         "id": "de:8212:7013",
-        "names": ["Kaiserslauterner Straße"],
+        "names": ["Karlsruhe Kaiserslautener Straße", "Kaiserslauterner Straße"],
         "lat": 49.03650801,
         "lon": 8.37436761
     },
@@ -2113,7 +2119,7 @@ module.exports = [
     },
     {
         "id": "de:8212:623",
-        "names": ["Wolfartsweierer Straße"],
+        "names": ["Karlsruhe Wolfartsweierer Straße", "Wolfartsweierer Straße"],
         "lat": 49.00351797,
         "lon": 8.42302735
     },
@@ -2131,7 +2137,7 @@ module.exports = [
     },
     {
         "id": "de:8212:101",
-        "names": ["Starckstraße"],
+        "names": ["Karlsruhe Starckstraße", "Starckstraße"],
         "lat": 49.01714702,
         "lon": 8.35296869
     },
@@ -2149,7 +2155,7 @@ module.exports = [
     },
     {
         "id": "de:8212:5005",
-        "names": ["Breite Straße"],
+        "names": ["Karlsruhe Breite Straße", "Breite Straße"],
         "lat": 48.99247204,
         "lon": 8.38574152
     },
@@ -2161,7 +2167,7 @@ module.exports = [
     },
     {
         "id": "de:8212:32586",
-        "names": ["Karlsruhe-Knielingen"],
+        "names": ["Karlsruhe Knielingen", "Knielingen"],
         "lat": 49.02661168,
         "lon": 8.34114114
     },
@@ -2173,7 +2179,7 @@ module.exports = [
     },
     {
         "id": "de:8212:5006",
-        "names": ["Neue Anlage Straße"],
+        "names": ["Karlsruhe Neue Anlage Straße", "Neue Anlage Straße"],
         "lat": 48.99049664,
         "lon": 8.38459071
     },
@@ -2185,7 +2191,7 @@ module.exports = [
     },
     {
         "id": "de:8212:801",
-        "names": ["Karlsruhe-Durlach"],
+        "names": ["Karlsruhe Durlach", "Durlach"],
         "lat": 49.00240748,
         "lon": 8.4630851
     },
@@ -2203,7 +2209,7 @@ module.exports = [
     },
     {
         "id": "de:8212:5505",
-        "names": ["Lorenzstraße"],
+        "names": ["Karlsruhe Lorenzstraße", "Lorenzstraße"],
         "lat": 48.99879025,
         "lon": 8.3834499
     },
@@ -2215,13 +2221,13 @@ module.exports = [
     },
     {
         "id": "de:8212:507",
-        "names": ["Lessingstraße"],
+        "names": ["Karlsruhe Lessingstraße", "Lessingstraße"],
         "lat": 49.00436102,
         "lon": 8.3843242
     },
     {
         "id": "de:8212:621",
-        "names": ["Philipp-Reis-Straße", "die neue welle"],
+        "names": ["Karlsruhe Philipp-Reis-Straße", "Karlsruhe die neue welle", "Philipp-Reis-Straße", "die neue welle"],
         "lat": 49.00452517,
         "lon": 8.41235484
     },
