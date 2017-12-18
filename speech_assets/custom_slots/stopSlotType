@@ -1,55 +1,583 @@
-Lassallestraße
-Siemensallee
-Neureuter Straße
-Feierabendweg
-Hertzstraße
-Kussmaulstraße
-Städtisches Klinikum
-Moltkestraße
-Yorckstraße
-Mühlburger Tor Kaiserallee
-Mühlburger Tor Grashofstraße
-Mühlburger Tor
-Europaplatz Kaiserstraße
-Europaplatz Karlstraße
-Postgalerie
-Karlstor
-Mathystraße
-Otto-Sachs-Straße
-Arbeitsagentur
-ZKM
-Welfenstraße
-Barbarossaplatz
+Neureut Rosmarinweg
+Karlsruhe Karl-Wilhelm-Platz
+Karl-Wilhelm-Platz
+Oberreut Wilhelm-Leuschner-Str
+Grötzingen Ohmstraße
+Durlach Paracelsusklinik
+Hohenwettersbach Mitte
+Karlsruhe Untermühlstraße
+Untermühlstraße
+Karlsruhe Entenfang
+Entenfang
+Neureut Kirchfeld Nord
+Karlsruhe Landauer Straße
+Landauer Straße
+Knielingen Lassallestraße
+Neureut Adolf-Ehrmann-Bad
+Knielingen Annweiler Straße
+Bergwald Elsa-Brändström-Straße
+Palmbach Winterrot
+Karlsruhe Heidehof
+Heidehof
+Neureut An der Trift
+Karlsruhe Linkenheimer Tor
+Linkenheimer Tor
+Knielingen Jakob-Dörr-Straße
+Knielingen Rheinbergstraße
+Daxlanden Mauerweg
+Karlsruhe Rintheimer Straße
+Rintheimer Straße
+Rintheim Forststraße
+Grötzingen Gustav-Hofmann-Straße
+Karlsruhe Rintheimer Querallee
+Rintheimer Querallee
+Karlsruhe Kußmaulstraße
+Kußmaulstraße
+Grötzingen Staigstraße
+Durlach Thomashof
+Durlach Am Heegwald
+Neureut Holbeinstraße
+Durlach Karl-Weysser-Straße
+Karlsruhe Duale Hochschule
+Duale Hochschule
+DHBW
+Oberreut Zentrum
+Neureut Kirchfeld
+Rüppurr Prinzenweg
+Hagsfeld Elfmorgenbruch
+Durlach Dieselstraße
+Stupferich Rathaus
+Karlsruhe Sinner Durmersheimer Sraße
+Sinner Durmersheimer Straße
+Karlsruhe Am Kanalweg
+Am Kanalweg
+Karlsruhe Ebertstraße
 Ebertstraße
+Daxlanden Hammweg
+Durlach Hubstraße
+Grötzingen Emil-Arheit-Halle
+Hagsfeld Oberdorfstraße
+Oberreut Rudolf-Breitscheid-Straße
+Karlsruhe Benzstraße
+Benzstraße
+Karlsruhe TÜV
+TÜV
+Hagsfeld Fächerbad
+Durlach Dürrenwettersbacher Straße
+Neureut Dammweg
+Neureut Donauschwabenstraße
+Karlsruhe Philippstraße
+Philippstraße
+Grötzingen Krappmühlenweg
+Grötzingen Eisenbahnstraße
+Hagsfeld Storrenacker Mitte
+Karlsruhe Bernsteinstraße
+Bernsteinstraße
+Karlsruhe Stresemannstraße
+Stresemannstraße
+Karlsruhe Haus Bethlehem
+Haus Bethlehem
+Durlach Killisfeldstraße
+Stupferich Wiesentalstraße
+Oberreut Bernhard-Lichtenberg-Straße
+Karlsruhe Belchenplatz
+Belchenplatz
+Grötzingen Fikentscherstraße
+Karlsruhe Hauptbahnhof
 Hauptbahnhof
-Hauptbahnhof Vorplatz
-Bahnhofsvorplatz
+Karlsruhe Poststraße
 Poststraße
-Tivoli
-Werderstraße
-Rüppurer Tor
-Kronenplatz
-Kronenplatz Fritz-Erler-Straße
-Durlacher Tor
-KIT Campus Süd
-KIT
-Gottesauer Platz
-BGV
+Waldstadt Glogauer Straße
+Hagsfeld An der Tagweide
+Durlach Max-Liebermann-Straße
+Karlsruhe Gebhardstraße
+Gebhardstraße
+Karlsruhe Binger Straße
+Binger Straße
+Karlsruhe Ettlinger Tor
+Ettlinger Tor
+Waldstadt Im Eichbäumle
+Karlsruhe Hardecksiedlung
+Hardecksiedlung
+Grötzingen An der Pfinz
+Durlach Gudrunstraße
+Karlsruhe Barbarossaplatz
+Barbarossaplatz
+Neureut Am Bachkanal
+Daxlanden Thomas-Mann-Straße
+Durlach Friedhof
+Durlach Wachhausstraße
+Karlsruhe Neckarplatz
+Neckarplatz
+Karlsruhe Madenburgweg
+Madenburgweg
+Karlsruhe Konkresszentrum
+Kongresszentrum
+Karlsruhe Hertzstraße
+Hertzstraße
+Karlsruhe Europahalle
+Karlsruhe Europabad
+Europahalle
+Europabad
+Durlach Maybachstraße
+Karlsruhe Birkenweg
+Birkenweg
+Karlsruhe Studentenhaus
+Studentenhaus
+Waldstadt Elbinger Straße West
+Neureut Waldenserkirche
+Karlsruhe Synagoge
+Synagoge
+Karlsruhe Lilienthalstraße
+Lilienthalstraße
+Karlsruhe Mühlburger Tor Kaiserallee
+Mühlburger Tor Kaiserallee
+Karlsruhe Europaplatz Sparkasse
+Europaplatz Sparkasse
+Karlsruhe Mühlburger Feld
+Mühlburger Feld
+Durlach Neßlerstraße
+Karlsruhe Blohnstraße
+Blohnstraße
+Neureut Blankenlocher Weg
+Grötzingen Vogelsang
+Karlsruhe ZKM
+ZKM
+Karlsruhe Rheinhafenstraße
+Rheinhafenstraße
+Neureut Welschneureuter Straße
+Karlsruhe Albtalbahnhof
+Albtalbahnhof
+Waldstadt Schneidemühler Straße
+Grötzingen Roßweide
+Durlach Kieselweg
+Karlsruhe Kunstakademie
+Karlsruhe Hochschule
+Kunstakademie
+Hochschule
+Neureut Grünewaldstraße
+Karlsruhe Pfannkuchstraße
+Pfannkuchstraße
+Waldstadt Osteroder Straße
+Karlsruhe Konzerthaus
+Konzerthaus
+Knielingen Siemensallee
+Waldstadt Kolberger Straße
+Durlach Blattwiesenstraße
+Karlsruhe Landgrabenstraße
+Landgrabenstraße
+Karlsruhe Windeckstraße
+Windeckstraße
+Karlsruhe Tullastraße
+Karlsruhe VBK
 Tullastraße
 VBK
-Verkehrsbetriebe
-Weinweg
-Untermühlstraße
-Auer Straße
+Neureut-Heide
+Karlsruhe Volkswohnung
+Volkswohnung
+Karlsruhe Rheinhafen
+Rheinhafen
+Hagsfeld Nord
+Hagsfeld Brückenstraße
+Karlsruhe Enzstraße
+Enzstraße
+Karlsruhe Holtzstraße
+Holtzstraße
+Karlsruhe Sankt Josefs-Kirche
+Sankt Josefs-Kirche
+Neureut Im Kleinen Bruch
+Knielingen Sudetenstraße
+Waldstadt Europäische Schule
+Durlach Schlesier Straße West
+Karlsruhe Barbaraweg
+Barbaraweg
+Karlsruhe Kühler Krug
+Kühler Krug
+Rüppurr Tulpenstraße
+Grötzingen Bahnhof
+Karlsruhe Edelbergstraße
+Edelbergstraße
+Neureut Mitteltorstraße
+Neureut Spöcker Straße
+Karlsruhe Rheinhafen Nord
+Rheinhafen Nord
+Karlsruhe August-Bebel-Straße
+August-Bebel-Straße
+Waldstadt Breslauer Straße
+Karlsruhe Gottesauer Platz
+Karlsruhe BGV
+Gottesauer Platz
+BGV
+Karlsruhe Vogesenbrücke
+Vogesenbrücke
+Karlsruhe Mühlburg West
+Mühlburg West
+Messe
+Messe-Express
+Karlsruhe Schwimmschulweg
+Schwimmschulweg
+Karlsruhe Europaplatz Karlstraße
+Europaplatz Karlstraße
+Palmbach Im Kloth
+Karlsruhe Andreas-Hofer-Straße
+Andreas-Hofer-Straße
+Karlsruhe Weißes Haus
+Weißes Haus
+Karlsruhe Arbeitsagentur
+Arbeitsagentur
+Durlach Dürrbachstraße
+Hagsfeld Reitschulschlag Wende
+Knielingen Max-Dortu-Straße
+Karlsruhe Europaplatz Kaiserstraße
+Europaplatz Kaiserstraße
+Knielingen Rheinbergstraße Wende
+Karlsruhe Hübschstraße
+Hübschstraße
+Durlach Gritznerstraße
+Durlach Max-Beckmann-Straße
+Wolfartsweier Süd
+Karlsruhe Sankt Vincentius Krankenhaus
+Sankt Vincentius Krankenhaus
+Karlsruhe Beiertheim West
+Beiertheim West
+Karlsruhe Weißenburger Straße
+Weißenburger Straße
+Karlsruhe Kärcherstraße
+Kärcherstraße
+Rintheim
+Karlsruhe Neureuter Straße
+Neureuter Straße
+Karlsruhe Betriebshof West
+Betriebshof West
+Karlsruhe Knielinger Allee
+Knielinger Allee
+Grötzingen Augustenburg
+Hagsfeld Julius-Bender-Straße
+Durlach Tiefbauamt
+Karlsruhe Welfenstraße
+Welfenstraße
+Karlsruhe Mathystraße
+Mathystraße
+Karlsruhe Hauptfriedhof
+Hauptfriedhof
+Karlsruhe Hirtenweg
+Karlsruhe Technologiepark
+Hirtenweg
+Technologiepark
+Waldstadt Jägerhaus
+Rüppurr Märchenring
+Hagsfeld Pfizer
+Durlach Ochsentorstraße
+Durlach Zündhütle
+Stupferich Pfefferäcker
+Karlsruhe Südendschule
+Südendschule
+Karlsruhe Staufenbergweg
+Staufenbergweg
+Neureut Neureuter Hauptstraße
+Karlsruhe Sophienstraße
+Sophienstraße
+Grötzingen Oberausstraße
+Neureut Großschneidersweg
+Neureut Moldaustraße
+Karlsruhe Sankt Klinikum Moltkestraße
+Sankt Klinikum Moltkestraße
+Hagsfeld Storrenacker Süd
+Hagsfeld Hallesche Allee
+Karlsruhe Bulach West
+Bulach West
+Neureut Kirchfeld Fortuna
+Karlsruhe Hauptbahnhof Süd
+Hauptbahnhof Süd
+Oberreut Eva-Maria-Buch-Straße
+Grötzingen Karl-Leopold-Straße
+Karlsruhe Pastor-Felke-Straße
+Pastor-Felke-Straße
+Durlach Ottostraße
+Bergwald Hooverstraße
+Stupferich Rebgärtenstraße
+Karlsruhe Hornisgrindestraße
+Hornisgrindestraße
+Neureut Kirche
+Karlsruhe Kaiserplatz
+Kaiserplatz
+Oberreut Badeniaplatz
+Durlach An der Fayence
+Grötzingen Pfinzhof
+Wolfartsweier Mitte
+Oberreut Johanna-Kirchner-Straße
+Karlsruhe Yorckstraße
+Yorckstraße
+Karlsruhe Westbahnhof
+Karlsruhe West
+Westbahnhof
+West
+Durlach Käthe-Kollwitz-Straße
+Daxlanden Tierheim
+Karlsruhe Landesbausparkasse
+Landesbausparkasse
+Stupferich Gerberastraße
+Hagsfeld Schwetzinger Straße
+Hagsfeld Mona
+Durlach Schlesier Straße Ost
+Karlsruhe Schweigener Straße
+Schweigener Straße
+Daxlanden Hammäcker
+Karlsruhe Erlenweg
+Erlenweg
+Rüppurr Hegaustraße
+Grötzingen Büchelbergstraße
+Stupferich Karlsbader Straße
+Stupferich Kirche
+Grünwinkel Friedhof
+Neureut Friedhof
+Knielingen Siemens
+Karlsruhe Büchiger Allee
+Büchiger Allee
+Grötzingen Weidbruch
+Hohenwettersbach Medersbach
+Karlsruhe Grünwinkler Straße
+Grünwinkler Straße
+Karlsruhe Berliner Straße
+Berliner Straße
+KIT Campus-Nord Busbahnhof
+Grötzingen Paul-Rein-Straße
+Karlsruhe Händelstraße
+Händelstraße
+Karlsruhe Kronenplatz Erler-Straße
+Kronenplatz Erler-Straße
+Rüppurr Ostendorfplatz
+Grötzingen Greschbachstraße
+Bergwald Fridtjof-Nansen-Straße
+Karlsruhe Griesbachstraße
+Griesbachstraße
+Durlach Auer Straße
 Doktor Willmar Schwabe
-Gritznerstraße
-Killisfeldstraße
-Ellmendinger Straße
-Ostmarkstraße
-Schlesier Straße West
-Schlesier Straße
-Steiermärkter Straße
-Zündhütle
+Karlsruhe Dammerstock
+Dammerstock
+Grötzingen Nord
+Hohenwettersbach Rathaus
+Neureut Bachenweg
+Hagsfeld Schäferstraße
+Karlsruhe Kolpingplatz
+Kolpingplatz
+Karlsruhe Eckenerstraße
+Eckenerstraße
+Daxlanden Nußbaumweg
+Durlach Eisenhafengrund
+Durlach Brühlstraße Mitte
+Karlsruhe Nürnberger Straße
+Nürnberger Straße
+Knielingen Husarenlager
+Durlach Bergwald
+Karlsruhe Trierer Straße
+Trierer Straße
+Knielingen Herweghstraße
+Daxlanden Waidweg
+Daxlanden Altrheinbrücke
+Karlsruhe Stadtwerke
+Stadtwerke
+Waldstadt Zentrum
+Karlsruhe Emil-Gött-Straße
+Emil-Gött-Straße
+Durlach Parkschlößle
+Karlsruhe Werderstraße
+Werderstraße
+Oberreut Albert-Braun-Straße
+Karlsruhe Ostendstraße
+Ostendstraße
+Grötzingen Im Sonnental
+Hagsfeld Neue Wiesen
+Bergwald Bergwaldschule
+Stupferich Rieslingstraße
+Karlsruhe Petergraben
+Petergraben
+Neureut Forlenweg
+Karlsruhe Frankenthaler Straße
+Frankenthaler Straße
+Durlach Turmberg
+Karlsruhe Schillerstraße
+Schillerstraße
+Karlsruhe Kronenplatz Kaiserstraße
+Kronenplatz Kaiserstraße
+Karlsruhe Feierabendweg
+Feierabendweg
+Grötzingen Heilig-Kreuz-Kirche
 Wolfartsweier Nord
-Neureut Heide
-Duale Hochschule
+Grötzingen LTZ Augustenberg
+Hagsfeld Jenaer Straße
+Karlsruhe Liststraße
+Liststraße
+Daxlanden Kirchplatz
+Hagsfeld Printzstraße
+Grünwettersbach Mitte
+Daxlanden August-Dosenbach-Straße
+Knielingen Reinmuthstraße
+Karlsruhe Rüppurrer Tor
+Rüppurrer Tor
+Karlsruhe Tivoli
+Tivoli
+Karlsruhe Mühlburger Tor Grashofstraße
+Mühlburger Tor Grashofstraße
+Durlach Säuterich
+Karlsruhe Eichelbergstraße
+Eichelbergstraße
+Neureut Alte Kreisstraße
+Karlsruhe Schloss Gottesaue
+Karlsruhe HfM
+Karlsruhe Hochschule für Musik
+Schloss Gottesaue
+HfM
+Hochschule für Musik
+Karlsruhe Schloss Rüppurr
+Schloss Rüppurr
+Grünwettersbach Seniorenresidenz
+Durlach Erich-Heckel-Straße
+Karlsruhe Wattkopfstraße
+Wattkopfstraße
+Karlsruhe Germersheimer Straße
+Germersheimer Straße
+Karlsruhe Marktplatz
+Marktplatz
+Karlsruhe Durlacher Tor
+Durlacher Tor
+Hagsfeld Süd
+Karlsruhe Weinbrenner Platz
+Weinbrennerplatz
+Rüppurr Battstraße
+Hagsfeld Reitschulschlag
+Durlach Tiefentalstraße
+Karlsruhe Weinweg
+Weinweg
+Karlsruhe Hauptbahnhof Vorplatz
+Hauptbahnhof Vorplatz
+Grötzingen Fröbelstraße
+Karlsruhe Schützenhaus
+Schützenhaus
+Karlsruhe Augartenstraße
+Augartenstraße
+Knielingen Eggensteiner Straße
+Karlsruhe Otto-Sachs-Straße
+Otto-Sachs-Straße
+Karlsruhe Hagsfeld
+Karlsruhe Hagsfeld Bahnhof
+Hagsfeld
+Hagsfeld Bahnhof
+Durlach August-Macke-Straße
+Karlsruhe Bulach Friedhof
+Bulach Friedhof
+Karlsruhe Weiherhof
+Weiherhof
+Neureut Am Zinken
+Mühlburg Bahnhof
+Grötzingen Rathaus
+Palmbach Kirche
+Karlsruhe Stephaniebad
+Stephanienbad
+Karlsruhe Durmersheimer Straße
+Durmersheimer Straße
+Knielingen Landeckstraße
+Durlach Schlossplatz
+Karlsruhe Herrenstraße
+Herrenstraße
+Grötzingen Ringelberghohl
+Durlach Friedrichschule
+Hagsfeld Geroldsäcker
+Karlsruhe Kurt-Schumacher-Straße
+Kurt-Schumacher-Straße
+Karlsruhe Maxau
+Maxau
+Palmbach Rudolf-Link-Straße
+Karlsruhe Sinner Zeppelinstraße
+Sinner Zeppelinstraße
+Karlsruhe Wilhelm-Kolb-Straße
+Wilhelm-Kolb-Straße
+Karlsruhe Kapellenstraße
+Kapellenstraße
+Karlsruhe Lameyplatz
+Lameyplatz
+Karlsruhe Karlstor
+Karlstor
+Daxlanden Ankerstraße
+Durlach Rommelstraße
+Neureut Am Hubengut
+KIT Campus-Nord Südtor
+Karlsruhe Bannwaldallee
+Bannwaldallee
+Durlach Ostmarkstraße
+Durlach Geigersberg
+Grötzingen Am Schwalbenloch
+Karlsruhe Schlossgartenbahn
+Schlossgartenbahn
+Daxlanden Dornröschenweg
+Waldstadt Elbinger Straße Ost
+Durlach Steiermärker Straße
+Durlach Ernst-Barlach-Straße
+Karlsruhe Junker-und-Ruh-Straße
+Junker-und-Ruh-Straße
+Karlsruhe Kaiserslautener Straße
+Kaiserslauterner Straße
+Knielingen Kolbengärten
+Daxlanden Karl-Delisle-Straße
+Daxlanden Rappenwört
+Karlsruhe Wolfartsweierer Straße
+Wolfartsweierer Straße
+Durlach Lerchenberg
+Durlach Ellmendinger Straße
+Karlsruhe Starckstraße
+Starckstraße
+Dunantstraße
+Rintheim Sinsheimer Straße
+Karlsruhe Breite Straße
+Breite Straße
+Knielingen Bruchweg
+Karlsruhe Knielingen
+Knielingen
+Hagsfeld Storrenacker Nord
+Karlsruhe Neue Anlage Straße
+Neue Anlage Straße
+Oberreut Eugen-Geck-Straße
+Karlsruhe Durlach
+Durlach
+Neureut Bärenweg
+Durlach Lußstraße
+Karlsruhe Lorenzstraße
+Lorenzstraße
+Neureut Flughafenstraße
+Karlsruhe Lessingstraße
+Lessingstraße
+Karlsruhe Philipp-Reis-Straße
+Karlsruhe die neue welle
+Philipp-Reis-Straße
+die neue welle
+Durlach Breit
+Durlach Killisfeld
+Hohenwettersbach Taglöhnergärten
+Grünwettersbach Rathaus
+Stupferich Auf der Römerstraße
+Forchheim Messe
+Forchheim Leichtsandstraße
+Forchheim Hallenbad
+Forchheim Hauptstraße
+Forchheim Oberfeldstraße
+Mörsch Merkurstraße
+Mörsch Römerstraße
+Mörsch Am Hang
+Mörsch Bach West
+Mörsch Rheinaustraße
+Mörsch Narzissenstraße
+Mörsch Rösselsbrünnle
+Eggenstein Süd
+Eggenstein Spöcker Weg
+Eggenstein Bahnhof
+Eggenstein Schweriner Straße
+Leopoldshafen Viermorgen
+Leopoldshafen Leopoldstraße
+Leopoldshafen Frankfurter Straße
+Linkenheim Süd
+Linkenheim Friedrichsstraße
+Linkenheim Rathaus
+Linkenheim Schulzentrum
+Hochstetten Grenzstraße
+Hochstetten Altenheim
+Hochstetten
