@@ -16,7 +16,7 @@ module.exports = {
         var departuresDirection1 = filter.getDeparturesByDirection('1', departures);
         var departuresDirection2 = filter.getDeparturesByDirection('2', departures);
 
-        var speechOutput = '<audio src="https://s3.eu-central-1.amazonaws.com/kvv-alexa-skill/tramGong.mp3" /> ';
+        var speechOutput = '<audio src="https://s3-eu-west-1.amazonaws.com/kvv-alexa-skill/tramGong.mp3" /> ';
         if (departuresDirection1.length != 0) {
             var destination = departuresDirection1[0].destination;
 
