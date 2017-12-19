@@ -30,6 +30,6 @@ module.exports = Alexa.CreateStateHandler(States.MAIN, {
         this.emit(':tell', util.random(this.t('CANCEL')));
     },
     'AMAZON.HelpIntent': function () {
-        this.emit(':tell', this.t('ROUTE_HANDLER_HELP'));
+        this.emit(':tell', this.t('HELP'));
     }
 });

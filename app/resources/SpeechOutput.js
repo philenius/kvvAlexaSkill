@@ -32,7 +32,10 @@ module.exports = {
 			],
 			'HELP': [
 				'<say-as interpret-as="interjection">Moin</say-as>. Du kannst mich nach den Abfahrtszeiten der Bahnen des KVV fragen. ' +
-				'Sage hierfür: Abfahrtszeiten. Oder: Wann fährt die nächste Bahn? Du kannst auch direkt sagen: Wann fährt die nächste S51 von Hauptbahnhof Vorplatz?'
+				'Sage hierfür: Abfahrtszeiten. Oder: Wann fährt die nächste Bahn? Du kannst auch direkt sagen: Wann fährt die nächste S51 von Hauptbahnhof Vorplatz?' +
+				'<p>Wenn du nicht bei jeder Anfrage die Haltestelle angeben möchtest, dann kannst du eine Haltestelle als deinen Standard ' +
+				'festlegen. Sage hierfür: Setze meine Standard Haltestelle.</p>' +
+				'<p>Ich hoffe, ich konnte dir mit diesen Informationen weiterhelfen. <say-as interpret-as="interjection">Bis dann.</say-as></p>'
 			],
 			'UNHANDLED': ['Leider ist bei der Verarbeitung deiner Anfrage ein Fehler aufgetreten.'],
 			'HOW_CAN_I_HELP_YOU': ['Wie kann ich dir noch behilflich sein?'],
@@ -46,16 +49,20 @@ module.exports = {
 			'STOP_HANDLER_HELP': [
 				'<p>Um die aktuellen Abfahrtszeiten zu erhalten, musst du mir den Namen einer Haltestelle nennen. ' +
 				'Bitte gebe den Namen der Haltestelle dabei exakt an. Bei einer Angabe wie zum Beispiel Europaplatz kann ich ansonsten nicht entscheiden, ' +
-				'ob du Europaplatz Sparkstraße oder Kaiserstraße meinst. Den Städtenamen musst du nicht angeben.</p>' +
-				'Aktuell sind nicht alle Haltestellen des gesamten Liniennetzes verfügbar. Aber mein Entwickler arbeitet daran, weitere Haltestellen nachzutragen. ' +
-				'Ich hoffe, ich konnte dir mit dieser Information weiterhelfen.'
+				'ob du Europaplatz Karlstraße oder Kaiserstraße meinst. Bei Haltestellen die mit dem Präfix Karlsruhe beginnen, musst du diesen nicht angeben. ' +
+				'Bei allen übrigen Haltestellen, die nicht mit diesem Präfix beginnen, nenne mir bitte den vollständigen Namen wie zum Beispiel: ' +
+				'Eggenstein Bahnhof.</p> Da es in und um Karlsruhe hunderte von Haltestellen gibt, kenne ich noch nicht alle Haltestellen des gesamten Liniennetzes. ' +
+				'Falls du eine Haltestelle vermisst, kannst du gerne meinen Entwickler darauf hinweisen. Schreibe hierfür einfach eine Kundenrezension auf Amazon. ' +
+				'Mein Entwickler wird die fehlenden Haltestellen schnellstmöglich nachtragen. <p>Wenn du nicht bei jeder Anfrage die Haltestelle angeben möchtest, ' +
+				'dann kannst du eine Haltestelle als deinen Standard festlegen. Sage hierfür: Setze meine Standard Haltestelle.</p> ' +
+				'<p>Ich hoffe, ich konnte dir mit diesen Informationen weiterhelfen. <say-as interpret-as="interjection">Bis dann.</say-as></p>'
 			],
 			'STANDARD_STOP_ANSWER': [
 				'<say-as interpret-as="interjection">Alles klar</say-as>, ich trage Buxtehude als deine Standard Haltestelle ein.<break time="1s"/>' +
 				'<say-as interpret-as="interjection">War nur ein Scherz.</say-as> Ich habe %s verstanden. Ist das richtig?'
 			],
 			'STANDARD_STOP_UNKNONW_STOP': ['Entschuldige, diese Haltestelle ist mir leider unbekannt. Nenne mir bitte erneut deine Haltestelle.'],
-			'STANDARD_STOP_UNKNONW_STOP_REPROMPT': ['Welche Haltestelle möchtest du als deine Standard Haltestelle festlegen?'],
+			'STANDARD_STOP_UNKNONW_STOP_REPROMPT': ['Welche Haltestelle möchtest du als deinen Standard festlegen?'],
 			'STANDARD_STOP_YES': [
 				'<say-as interpret-as="interjection">Prima</say-as>, ist erledigt.',
 				'<say-as interpret-as="interjection">Okey dokey</say-as>, ist erledigt.',
