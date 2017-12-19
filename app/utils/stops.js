@@ -1789,7 +1789,7 @@ module.exports = [
     },
     {
         "id": "de:8212:3",
-        "names": ["Karlsruhe Durlacher Tor", "Durlacher Tor"],
+        "names": ["Karlsruhe Durlacher Tor", "Karlsruhe KIT", "Kalrsruhe KIT Campus Süd", "Durlacher Tor", "KIT", "KIT Campus Süd"],
         "lat": 49.009255,
         "lon": 8.413622
     },
