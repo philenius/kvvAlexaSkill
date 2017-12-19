@@ -31,8 +31,8 @@ module.exports = {
 				'<say-as interpret-as="interjection">Tschö.</say-as>',
 			],
 			'HELP': [
-				'<say-as interpret-as="interjection">Moin</say-as>. Du kannst mich nach den Abfahrtszeiten der Bahnen des KVV fragen. ' +
-				'Sage hierfür: Abfahrtszeiten. Oder: Wann fährt die nächste Bahn? Du kannst auch direkt sagen: Wann fährt die nächste S51 von Hauptbahnhof Vorplatz?' +
+				'<say-as interpret-as="interjection">Moin</say-as>. Ich kann dir Auskunft zu Echtzeitinformationen von Tram und S-Bahn-Linien des KVV geben. Um mich nach den Abfahrtszeiten der Bahnen zu fragen, sage einfach: Abfahrtszeiten. Oder: Wann fährt die nächste ' +
+				'Bahn? Du kannst auch direkt sagen: Wann fährt die nächste S51 von Hauptbahnhof Vorplatz?' +
 				'<p>Wenn du nicht bei jeder Anfrage die Haltestelle angeben möchtest, dann kannst du eine Haltestelle als deinen Standard ' +
 				'festlegen. Sage hierfür: Setze meine Standard Haltestelle.</p>' +
 				'<p>Ich hoffe, ich konnte dir mit diesen Informationen weiterhelfen. <say-as interpret-as="interjection">Bis dann.</say-as></p>'
