@@ -13,7 +13,7 @@ module.exports = [
     },
     {
         "id": "de:8212:610",
-        "names": ["Oberreut Wilhelm-Leuschner-Str"],
+        "names": ["Oberreut Wilhelm-Leuschner-Straße"],
         "lat": 48.98344799,
         "lon": 8.36489487
     },
@@ -799,7 +799,7 @@ module.exports = [
     },
     {
         "id": "de:8212:1521",
-        "names": ["Grötzingen Bahnhof"],
+        "names": ["Grötzingen Bahnhof", "Grötzingen"],
         "lat": 49.00597032,
         "lon": 8.49334912
     },
@@ -859,7 +859,7 @@ module.exports = [
     },
     {
         "id": "de:8212:211",
-        "names": ["Messe", "Messe-Express"],
+        "names": ["Messe"],
         "lat": 48.98135665,
         "lon": 8.32748898
     },
@@ -1897,7 +1897,7 @@ module.exports = [
     },
     {
         "id": "de:8212:32587",
-        "names": ["Mühlburg Bahnhof"],
+        "names": ["Mühlburg Bahnhof", "Mühlburg"],
         "lat": 49.01455574,
         "lon": 8.35108839
     },
@@ -2341,7 +2341,7 @@ module.exports = [
     },
     {
         "id": "de:8215:1120",
-        "names": ["Eggenstein Bahnhof"],
+        "names": ["Eggenstein Bahnhof", "Eggenstein"],
         "lat": 49.07570374,
         "lon": 8.39796518
     },
@@ -2410,5 +2410,342 @@ module.exports = [
         "names": ["Hochstetten"],
         "lat": 49.13356812,
         "lon": 8.41573671
+    },
+    {
+        "id": "de:8215:32296",
+        "names": ["Spöck Richard-Hecht-Schule"],
+        "lat": 49.11280137,
+        "lon": 8.50520618
+    },
+    {
+        "id": "de:8215:32052",
+        "names": ["Spöck Hochhaus"],
+        "lat": 49.11165803,
+        "lon": 8.50071118
+    },
+    {
+        "id": "de:8215:33079",
+        "names": ["Friedrichstal Nord"],
+        "lat": 49.10886343,
+        "lon": 8.4767705
+    },
+    {
+        "id": "de:8215:32743",
+        "names": ["Friedrichstal Mitte"],
+        "lat": 49.10436148,
+        "lon": 8.47544832
+    },
+    {
+        "id": "de:8215:32704",
+        "names": ["Friedrichstal Sankt-Riquier-Platz"],
+        "lat": 49.10103077,
+        "lon": 8.47463438
+    },
+    {
+        "id": "de:8237:1221",
+        "names": ["Friedrichstal Bahnhof", "Friedrichstal"],
+        "lat": 48.48185825,
+        "lon": 8.37695747
+    },
+
+    {
+        "id": "de:8215:32033",
+        "names": ["Blankenloch Nord"],
+        "lat": 49.07319666,
+        "lon": 8.46785199
+    },
+    {
+        "id": "de:8215:1903",
+        "names": ["Blankenloch Süd"],
+        "lat": 49.05749355,
+        "lon": 8.46717135
+    },
+    {
+        "id": "de:8215:32031",
+        "names": ["Blankenloch Kirche"],
+        "lat": 49.06496791,
+        "lon": 8.47152516
+    },
+    {
+        "id": "de:8215:1906",
+        "names": ["Blankenloch Mühlenweg"],
+        "lat": 49.06883028,
+        "lon": 8.47454973
+    },
+    {
+        "id": "de:8215:32030",
+        "names": ["Blankenloch Tolna-Platz"],
+        "lat": 49.06041809,
+        "lon": 8.46958936
+    },
+    {
+        "id": "de:8215:1902",
+        "names": ["Büchig"],
+        "lat": 49.0477726,
+        "lon": 8.46122883
+    },
+    {
+        "id": "de:8215:1221",
+        "names": ["Ettlingen Wasen"],
+        "lat": 48.94517016,
+        "lon": 8.39877257
+    },
+    {
+        "id": "de:8215:1223",
+        "names": ["Ettlingen Erbprinz", "Ettlingen Schloss"],
+        "lat": 48.94076612,
+        "lon": 8.40438117
+    },
+    {
+        "id": "de:8215:1231",
+        "names": ["Ettlingen Stadt"],
+        "lat": 48.93864183,
+        "lon": 8.40921118
+    },
+    {
+        "id": "de:8215:1235",
+        "names": ["Ettlingen Albgaubad"],
+        "lat": 48.93680238,
+        "lon": 8.41527952
+    },
+    {
+        "id": "de:8215:1237",
+        "names": ["Ettlingen Spinnerei"],
+        "lat": 48.93452618,
+        "lon": 8.44227588
+    },
+    {
+        "id": "de:8215:1241",
+        "names": ["Busenbach Bahnhof", "Busenbach"],
+        "lat": 48.92929797,
+        "lon": 8.45086364
+    },
+    {
+        "id": "de:8215:1401",
+        "names": ["Reichenbach Kurpark"],
+        "lat": 48.91891535,
+        "lon": 8.47278123
+    },
+    {
+        "id": "de:8215:1402",
+        "names": ["Reichenbach Bahnhof", "Reichenbach"],
+        "lat": 48.92053,
+        "lon": 8.47983226
+    },
+    {
+        "id": "de:8215:1411",
+        "names": ["Langensteinbach Schießhüttenäcker"],
+        "lat": 48.91995775,
+        "lon": 8.50091923
+    },
+    {
+        "id": "de:8215:1403",
+        "names": ["Langensteinbach Bahnhof", "Langensteinbach"],
+        "lat": 48.91557894,
+        "lon": 8.50309124
+    },
+    {
+        "id": "de:8215:1404",
+        "names": ["Langensteinbach Sankt Barbara"],
+        "lat": 48.90965617,
+        "lon": 8.49964401
+    },
+    {
+        "id": "de:8215:1406",
+        "names": ["Spielberg"],
+        "lat": 48.89761244,
+        "lon": 8.47466922
+    },
+    {
+        "id": "de:8215:1408",
+        "names": ["Ittersbach Industrie"],
+        "lat": 48.8847775,
+        "lon": 8.50865964
+    },
+    {
+        "id": "de:8215:1409",
+        "names": ["Ittersbach Bahnhof", "Ittersbach"],
+        "lat": 48.86917763,
+        "lon": 8.51117054
+    },
+    {
+        "id": "de:8215:1410",
+        "names": ["Ittersbach Rathaus"],
+        "lat": 48.86607857,
+        "lon": 8.50982409
+    },
+    {
+        "id": "de:8215:1301",
+        "names": ["Etzenrot Bahnhof", "Etzenrot"],
+        "lat": 48.91452068,
+        "lon": 8.4578063
+    },
+    {
+        "id": "de:8215:1302",
+        "names": ["Fischweier"],
+        "lat": 48.88817848,
+        "lon": 8.45125952
+    },
+    {
+        "id": "de:8215:1303",
+        "names": ["Marxzell Bahnhof", "Marxzell"],
+        "lat": 48.86366544,
+        "lon": 8.44746602
+    },
+    {
+        "id": "de:8215:1304",
+        "names": ["Frauenalb Schielberg"],
+        "lat": 48.83715843,
+        "lon": 8.44048337
+    },
+    {
+        "id": "de:8235:9711",
+        "names": ["Bad Herrenalb Kullenmühle"],
+        "lat": 48.80917431,
+        "lon": 8.44421207
+    },
+    {
+        "id": "de:8235:9558",
+        "names": ["Bad Herrenalb Bahnhof", "Bad Herrenalb"],
+        "lat": 48.80241433,
+        "lon": 8.43911392
+    },
+    {
+        "id": "de:8215:1220",
+        "names": ["Ettlingen Neuwiesenreben"],
+        "lat": 48.95301179,
+        "lon": 8.40058986
+    },
+    {
+        "id": "de:7334:1721",
+        "names": ["Maximiliansau Eisenbahnstraße"],
+        "lat": 49.037178,
+        "lon": 8.298737
+    },
+    {
+        "id": "de:7334:1723",
+        "names": ["Maximiliansau West"],
+        "lat": 49.038882,
+        "lon": 8.292083
+    },
+    {
+        "id": "de:7334:1731",
+        "names": ["Wörth Bahnhof", "Wörth"],
+        "lat": 49.04551,
+        "lon": 8.272808
+    },
+    {
+        "id": "de:7334:1741",
+        "names": ["Wörth Zügelstraße"],
+        "lat": 49.05402916,
+        "lon": 8.26249386
+    },
+    {
+        "id": "de:7334:35004",
+        "names": ["Jockgrim Bahnhof", "Jockgrim"],
+        "lat": 49.09175907,
+        "lon": 8.27232717
+    },
+    {
+        "id": "de:7334:35003",
+        "names": ["Rheinzabern Bahnhof", "Rheinzabern"],
+        "lat": 49.11891637,
+        "lon": 8.27401223
+    },
+    {
+        "id": "de:7334:1744",
+        "names": ["Rheinzabern Rappengasse"],
+        "lat": 49.11499134,
+        "lon": 8.27328871
+    },
+    {
+        "id": "de:7334:1743",
+        "names": ["Rheinzabern Alte Römerstraße"],
+        "lat": 49.10874036,
+        "lon": 8.27303761
+    },
+    {
+        "id": "de:7334:32451",
+        "names": ["Rülzheim Bahnhof", "Rülzheim"],
+        "lat": 49.15980939,
+        "lon": 8.28811235
+    },
+    {
+        "id": "de:7334:1745",
+        "names": ["Rülzheim Freizeitzentrum"],
+        "lat": 49.15137513,
+        "lon": 8.27943255
+    },
+    {
+        "id": "de:7334:32660",
+        "names": ["Bellheim Bahnhof", "Bellheim"],
+        "lat": 49.18819218,
+        "lon": 8.29471529
+    },
+    {
+        "id": "de:7334:1746",
+        "names": ["Bellheim Am Mühlbuckel"],
+        "lat": 49.19299057,
+        "lon": 8.29861207
+    },
+    {
+        "id": "de:7334:35002",
+        "names": ["Sondernheim Bahnhof", "Sondernheim"],
+        "lat": 49.19458054,
+        "lon": 8.36028897
+    },
+    {
+        "id": "de:7334:1747",
+        "names": ["Germersheim Süd", "Germersheim Nolte"],
+        "lat": 49.20852403,
+        "lon": 8.37456041
+    },
+    {
+        "id": "de:7334:1748",
+        "names": ["Germersheim Mitte", "Germersheim Rhein"],
+        "lat": 49.21978954,
+        "lon": 8.37934628
+    },
+    {
+        "id": "de:7334:32637",
+        "names": ["Germersheim Bahnhof", "Germersheim"],
+        "lat": 49.22502743,
+        "lon": 8.36531876
+    },
+    {
+        "id": "de:7334:1734",
+        "names": ["Wörth Bienwaldhalle"],
+        "lat": 49.049528,
+        "lon": 8.261083
+    },
+    {
+        "id": "de:7334:1735",
+        "names": ["Wörth Bürgerpark"],
+        "lat": 49.050807,
+        "lon": 8.254828
+    },
+    {
+        "id": "de:7334:1736",
+        "names": ["Wörth Rathaus"],
+        "lat": 49.052328,
+        "lon": 8.249827
+    },
+    {
+        "id": "de:7334:1739",
+        "names": ["Wörth Badallee"],
+        "lat": 49.055713,
+        "lon": 8.249842
+    },
+    {
+        "id": "de:7334:1738",
+        "names": ["Wörth Badepark"],
+        "lat": 49.058307,
+        "lon": 8.244047
+    },
+    {
+        "id": "de:7334:1714",
+        "names": ["Wörth Alte Bahnmeisterei"],
+        "lat": 49.048345,
+        "lon": 8.266308
     },
 ];
